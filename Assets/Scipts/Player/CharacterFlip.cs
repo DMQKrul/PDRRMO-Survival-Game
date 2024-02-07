@@ -1,3 +1,21 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class CharacterFlip : MonoBehaviour
+{
+    protected Rigidbody2D rb;
+    protected Collider2D col;
+    protected CharacterFlip character;
+
+    [HideInInspector]
+    public bool isFacingLeft;
+    [HideInInspector] 
+    public bool isGrounded;
+    [HideInInspector]
+    public bool isJumping;
+
+    public bool spawnFacingLeft;
     private Vector2 facingLeft;
 
 
