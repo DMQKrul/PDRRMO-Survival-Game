@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityStandardAssets.CrossPlatformInput;
+using UnityEngine.UI;
 
 public class Player_attack : MonoBehaviour
 {
@@ -13,25 +13,36 @@ public class Player_attack : MonoBehaviour
     public float attackRange;
     public int damage;
 
+    // Reference to the UI button
+    public Button attackButton;
+
+    void Start()
+    {
+        // Register a method to be called when the button is clicked
+        attackButton.onClick.AddListener(Attack);
+    }
+
     void Update()
     {
-        if(timeBtwAttack <= 0)
+        if (timeBtwAttack > 0)
         {
-            if (CrossPlatformInputManager.GetButtonDown("Attack"))
-           {
+            timeBtwAttack -= Time.deltaTime;
+        }
+    }
+
+    public void Attack()
+    {
+        if (timeBtwAttack <= 0)
+        {
             Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
             for (int i = 0; i < enemiesToDamage.Length; i++)
             {
                 enemiesToDamage[i].GetComponent<Enemy>().TakeDamage(damage);
             }
-           }
 
-           timeBtwAttack = startTimeBtwAttack;
-        }  else
-    {
-        timeBtwAttack -= Time.deltaTime;
+            timeBtwAttack = startTimeBtwAttack;
+        }
     }
-    }   
 
     private void OnDrawGizmosSelected()
     {
