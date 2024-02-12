@@ -2219,7 +2219,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 5f1d56c851ec1f849b3849ac290d427a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2239,7 +2239,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1348845713}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.05, y: -0.41, z: 0}
+  m_LocalPosition: {x: -7.1, y: 0.59, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2259,7 +2259,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.049273014, y: -0.19037962}
+  m_Offset: {x: -0.05368319, y: -0.48891956}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2270,7 +2270,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.40145397, y: 0.62811136}
+  m_Size: {x: 0.24628735, y: 0.03103149}
   m_EdgeRadius: 0
 --- !u!50 &1348845717
 Rigidbody2D:
@@ -2287,12 +2287,12 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 2
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_CollisionDetection: 1
+  m_Constraints: 4
 --- !u!95 &1348845718
 Animator:
   serializedVersion: 5
@@ -2323,7 +2323,7 @@ Animation:
   m_GameObject: {fileID: 1348845713}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 3607dacb08442854da483e3f419b0002, type: 2}
+  m_Animation: {fileID: 7400000, guid: 64de25eacbe8fbb4fb79398dbc73830d, type: 2}
   m_Animations:
   - {fileID: 0}
   m_WrapMode: 0
