@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets.CrossPlatformInput;
 
 public class Player_attack : MonoBehaviour
 {
@@ -14,7 +15,27 @@ public class Player_attack : MonoBehaviour
 
     void Update()
     {
-        if(timeBtwAttack)
-           Input.GetKeyDown(E);
+        if(timeBtwAttack <= 0)
+        {
+            if (CrossPlatformInputManager.GetButtonDown("Attack"))
+           {
+            Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
+            for (int i = 0; i < enemiesToDamage.Length; i++)
+            {
+                enemiesToDamage[i].GetComponent<Enemy>().TakeDamage(damage);
+            }
+           }
+
+           timeBtwAttack = startTimeBtwAttack;
+        }  else
+    {
+        timeBtwAttack -= Time.deltaTime;
+    }
+    }   
+
+    private void OnDrawGizomosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(attackPos.position, attackRange);
     }
 }
