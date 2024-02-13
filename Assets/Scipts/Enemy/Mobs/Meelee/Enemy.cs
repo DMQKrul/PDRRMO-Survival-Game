@@ -8,18 +8,21 @@ public class Enemy : MonoBehaviour
     private float dazedTime;
     public float startDazedTime;
     public float speed;
+
+    // private Animator mobAnim;
     // public GameObject damageEffect;
 
     void Start()
     {
-        
+        // mobAnim = GetComponent<Animator>();
     }
 
     void Update()
     {
+
         if(dazedTime <= 0)
         {
-            speed = 2;
+            speed = 1;
         } else
         {
             speed = 0;

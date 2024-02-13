@@ -2097,6 +2097,8 @@ GameObject:
   - component: {fileID: 1012769122}
   - component: {fileID: 1012769121}
   - component: {fileID: 1012769123}
+  - component: {fileID: 1012769125}
+  - component: {fileID: 1012769124}
   m_Layer: 7
   m_Name: Meelee Mob
   m_TagString: Untagged
@@ -2111,9 +2113,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1012769117}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 17.71, y: -0.37, z: 0.035958007}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 17.45, y: -1.15, z: 0.035958007}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1030637285}
@@ -2132,7 +2134,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.007497728, y: -0.4472233}
+  m_Offset: {x: 0.008099556, y: -0.46432143}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2143,7 +2145,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.31021118, y: 0.10555339}
+  m_Size: {x: 0.45917892, y: 0.0713571}
   m_EdgeRadius: 0
 --- !u!212 &1012769120
 SpriteRenderer:
@@ -2186,7 +2188,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 2092172273, guid: 8ef6b3ab2878f564fb329a4c8998f8a6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2232,7 +2234,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 5
   startDazedTime: 0.9
-  speed: 2
+  speed: 1
 --- !u!70 &1012769123
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -2249,6 +2251,43 @@ CapsuleCollider2D:
   m_Offset: {x: -0.004707575, y: 0}
   m_Size: {x: 0.99058485, y: 1}
   m_Direction: 0
+--- !u!95 &1012769124
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1012769117}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 39344bcf82b4cbb4c9c2a9a5493fae3d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!111 &1012769125
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1012769117}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: c5e6efaf6499ec44484afdf8a6194ba3, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: f8db80c6856872c409aea0894223a28c, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1030637284
 GameObject:
   m_ObjectHideFlags: 0
@@ -2788,7 +2827,7 @@ MonoBehaviour:
     m_Bits: 128
   attackRange: 0.69
   damage: 1
-  attackButton: {fileID: 0}
+  attackButton: {fileID: 2045585440}
 --- !u!1 &1465653683
 GameObject:
   m_ObjectHideFlags: 0
