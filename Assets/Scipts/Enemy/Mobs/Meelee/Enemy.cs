@@ -9,7 +9,6 @@ public class Enemy : MonoBehaviour
     public float startDazedTime;
     public float speed;
     // public GameObject damageEffect;
-    // public float speed;
 
     void Start()
     {
