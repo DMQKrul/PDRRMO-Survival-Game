@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8b8cd4e1e4861624585b58dc660c1325
+guid: a8132809d37cc62478137e3c42d7197a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -117,34 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: rightBtn_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 222
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a4b7caff4b7094f4bb52606f12a892ab
-      internalID: 1633649184
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rightBtn_1
+      name: arrowBtn_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 367
-        height: 353
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,41 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 35ec40f68e3da4345a70d518aac1d356
-      internalID: -1898166060
+      spriteID: 0615aff88bb2e3241bc4573ada07b267
+      internalID: 221488408
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rightBtn_2
+      name: arrowBtn_1
       rect:
         serializedVersion: 2
-        x: 366
+        x: 512
         y: 0
-        width: 341
-        height: 353
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 2, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b4e2c1e6c51bd3d46be3a0f1938f671e
-      internalID: 657677684
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rightBtn_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 108
-        width: 24
-        height: 28
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,29 +152,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f2ddd64336b99a5409050f45fc997bf2
-      internalID: -707929825
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rightBtn_4
-      rect:
-        serializedVersion: 2
-        x: 120
-        y: 0
-        width: 12
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ca75c4d892a452a4bbab32dd1f794c99
-      internalID: 1958326355
+      spriteID: 2b9c53c5db9f80d42bfb855d28bfefac
+      internalID: 105882663
       vertices: []
       indices: 
       edges: []
@@ -232,11 +169,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      rightBtn_0: 1633649184
-      rightBtn_1: -1898166060
-      rightBtn_2: 657677684
-      rightBtn_3: -707929825
-      rightBtn_4: 1958326355
+      arrowBtn_0: 221488408
+      arrowBtn_1: 105882663
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
