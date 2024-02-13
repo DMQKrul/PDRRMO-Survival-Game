@@ -6,7 +6,7 @@ using UnityStandardAssets.CrossPlatformInput;
 public class Character : MonoBehaviour
 {
     private Rigidbody2D rb;
-    private Animator anim;
+    private Animator playerAnim;
     private float moveSpeed;
     private float dirX;
     private bool facingRight = true;
@@ -15,7 +15,7 @@ public class Character : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        anim = GetComponent<Animator>();
+        playerAnim = GetComponent<Animator>();
         localScale = transform.localScale;
         moveSpeed = 5f;
     }
@@ -28,23 +28,23 @@ public class Character : MonoBehaviour
             rb.AddForce(Vector2.up * 600f);
 
         if (Mathf.Abs(dirX) > 0 && rb.velocity.y == 0)
-            anim.SetBool("isRunning", true);
+            playerAnim.SetBool("isRunning", true);
         else 
-            anim.SetBool("isRunning", false);
+            playerAnim.SetBool("isRunning", false);
 
         if (rb.velocity.y == 0)
         {
-            anim.SetBool("isJumping", false);
-            anim.SetBool("isFalling", false);
+            playerAnim.SetBool("isJumping", false);
+            playerAnim.SetBool("isFalling", false);
         }
 
         if (rb.velocity.y > 0)
-            anim.SetBool("isJumping", true);
+            playerAnim.SetBool("isJumping", true);
 
         if (rb.velocity.y < 0)
         {
-            anim.SetBool("isJumping", false);
-            anim.SetBool("isFalling", true);
+            playerAnim.SetBool("isJumping", false);
+            playerAnim.SetBool("isFalling", true);
         }
     }
 

@@ -10,6 +10,7 @@ public class Player_attack : MonoBehaviour
 
     public Transform attackPos;
     public LayerMask whatIsEnemies;
+    private Animator playerAnim;
     public float attackRange;
     public int damage;
 
@@ -19,6 +20,7 @@ public class Player_attack : MonoBehaviour
     void Start()
     {
         // Register a method to be called when the button is clicked
+        playerAnim = GetComponent<Animator>();
         attackButton.onClick.AddListener(Attack);
     }
 
@@ -34,6 +36,9 @@ public class Player_attack : MonoBehaviour
     {
         if (timeBtwAttack <= 0)
         {
+            // camAnim.SetTrigger("shake");
+            playerAnim.SetBool("isAttacking", true);
+            playerAnim.SetBool("isAtkRunning", true);
             Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
             for (int i = 0; i < enemiesToDamage.Length; i++)
             {
@@ -42,6 +47,12 @@ public class Player_attack : MonoBehaviour
 
             timeBtwAttack = startTimeBtwAttack;
         }
+    }
+
+    public void endAttack()
+    {
+        playerAnim.SetBool("isAttacking", false);
+        playerAnim.SetBool("isAtkRunning", false);
     }
 
     private void OnDrawGizmosSelected()

@@ -1873,7 +1873,7 @@ GameObject:
   m_Component:
   - component: {fileID: 601724414}
   - component: {fileID: 601724413}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1918,8 +1918,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1575402745
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e892d2920d5d60549a8bb18f15452211, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1930,7 +1930,7 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 2
+  m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &601724414
 Transform:
@@ -1940,7 +1940,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 601724412}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.1208797, y: -0.65, z: 0.016316984}
+  m_LocalPosition: {x: 5.1208797, y: -0.65, z: 0}
   m_LocalScale: {x: 11.217619, y: 9.422485, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2076,7 +2076,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 993749046}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.255, y: -0.133, z: 0}
+  m_LocalPosition: {x: 0.247, y: -0.18, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2111,7 +2111,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1012769117}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.69, y: -0.05, z: 0.035958007}
+  m_LocalPosition: {x: 16.63, y: -2.79, z: 0.035958007}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2230,6 +2230,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 5
+  startDazedTime: 0.9
+  speed: 2
 --- !u!1 &1030637284
 GameObject:
   m_ObjectHideFlags: 0
@@ -2618,7 +2620,7 @@ Animation:
   m_GameObject: {fileID: 1348845713}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 64de25eacbe8fbb4fb79398dbc73830d, type: 2}
+  m_Animation: {fileID: 7400000, guid: 3607dacb08442854da483e3f419b0002, type: 2}
   m_Animations:
   - {fileID: 0}
   m_WrapMode: 0
