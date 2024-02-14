@@ -8,6 +8,7 @@ public class Enemy : MonoBehaviour
     private float dazedTime;
     public float startDazedTime;
     public float speed;
+    
 
     // private Animator mobAnim;
     // public GameObject damageEffect;
@@ -34,7 +35,7 @@ public class Enemy : MonoBehaviour
             Destroy(gameObject);
         }
 
-        transform.Translate(Vector2.left * speed * Time.deltaTime);
+        // transform.Translate(Vector2.left * speed * Time.deltaTime);
     }
 
     public void TakeDamage(int damage)

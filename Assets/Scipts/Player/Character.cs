@@ -7,6 +7,7 @@ public class Character : MonoBehaviour
 {
     private Rigidbody2D rb;
     private Animator playerAnim;
+    public int health;
     private float moveSpeed;
     private float dirX;
     private bool facingRight = true;
@@ -46,6 +47,19 @@ public class Character : MonoBehaviour
             playerAnim.SetBool("isJumping", false);
             playerAnim.SetBool("isFalling", true);
         }
+
+        if (health <= 0)
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    public void TakeDamage(int damage)
+    {
+        // dazedTime = startDazedTime;
+        // Instantiate(damageEffect, transform.position, Quaternion.identity)
+        health -= damage;
+        Debug.Log("Damage Taken !");
     }
 
     private void FixedUpdate()
