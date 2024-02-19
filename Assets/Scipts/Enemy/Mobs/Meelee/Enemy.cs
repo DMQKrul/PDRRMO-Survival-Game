@@ -8,6 +8,7 @@ public class Enemy : MonoBehaviour
     private float dazedTime;
     public float startDazedTime;
     public float speed;
+    private Animator mob1Anim;
     
 
     // private Animator mobAnim;
@@ -15,7 +16,7 @@ public class Enemy : MonoBehaviour
 
     void Start()
     {
-        // mobAnim = GetComponent<Animator>();
+        mob1Anim = GetComponent<Animator>();
     }
 
     void Update()
@@ -32,7 +33,8 @@ public class Enemy : MonoBehaviour
 
         if (health <= 0)
         {
-            Destroy(gameObject);
+            mob1Anim.SetBool("isDead", true);
+            Destroy(gameObject, 1f);
         }
 
         // transform.Translate(Vector2.left * speed * Time.deltaTime);
