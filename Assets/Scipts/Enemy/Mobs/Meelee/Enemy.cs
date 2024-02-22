@@ -24,7 +24,7 @@ public class Enemy : MonoBehaviour
 
         if(dazedTime <= 0)
         {
-            speed = 1;
+            speed = 3;
         } else
         {
             speed = 0;

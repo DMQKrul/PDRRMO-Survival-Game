@@ -12390,7 +12390,7 @@ GameObject:
   - component: {fileID: 1139606979}
   - component: {fileID: 1139606978}
   - component: {fileID: 1139606983}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Range Mob
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12439,7 +12439,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 10
   startDazedTime: 0.9
-  speed: 1
+  speed: 3
 --- !u!95 &1139606980
 Animator:
   serializedVersion: 5
@@ -13450,7 +13450,7 @@ MonoBehaviour:
   radius: 1.29
   height: 2.54
   canMove: 1
-  maxSpeed: 1
+  maxSpeed: 2
   gravity: {x: NaN, y: NaN, z: NaN}
   groundMask:
     serializedVersion: 2
