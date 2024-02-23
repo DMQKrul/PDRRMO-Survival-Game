@@ -7,7 +7,8 @@ public class Character : MonoBehaviour
 {
     private Rigidbody2D rb;
     private Animator playerAnim;
-    public int health;
+    public int currentHealth;
+    public int maxHealth;
     private float moveSpeed;
     private float dirX;
     private bool facingRight = true;
@@ -19,6 +20,8 @@ public class Character : MonoBehaviour
         playerAnim = GetComponent<Animator>();
         localScale = transform.localScale;
         moveSpeed = 5f;
+
+        currentHealth = maxHealth;
     }
 
     void Update()
@@ -48,11 +51,9 @@ public class Character : MonoBehaviour
             playerAnim.SetBool("isFalling", true);
         }
 
-        if (health <= 0)
+        if (currentHealth <= 0)
         {
             Destroy(gameObject);
-            // hahahadogerssu 
-            // v2
         }
     }
 
@@ -60,7 +61,7 @@ public class Character : MonoBehaviour
     {
         // dazedTime = startDazedTime;
         // Instantiate(damageEffect, transform.position, Quaternion.identity)
-        health -= damage;
+        currentHealth -= damage;
         Debug.Log("Damage Taken !");
     }
 
