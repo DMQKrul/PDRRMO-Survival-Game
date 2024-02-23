@@ -51,7 +51,8 @@ public class Character : MonoBehaviour
         if (health <= 0)
         {
             Destroy(gameObject);
-            // hahahadogerssu
+            // hahahadogerssu 
+            // v2
         }
     }
 
