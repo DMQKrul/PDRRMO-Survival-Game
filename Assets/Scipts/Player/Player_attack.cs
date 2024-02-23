@@ -24,14 +24,6 @@ public class Player_attack : MonoBehaviour
         attackButton.onClick.AddListener(Attack);
     }
 
-    void Update()
-    {
-        if (timeBtwAttack > 0)
-        {
-            timeBtwAttack -= Time.deltaTime;
-        }
-    }
-
     public void Attack()
     {
         if (timeBtwAttack <= 0)
@@ -46,6 +38,9 @@ public class Player_attack : MonoBehaviour
             }
 
             timeBtwAttack = startTimeBtwAttack;
+        } else
+        {
+            timeBtwAttack -= Time.deltaTime;
         }
     }
 
