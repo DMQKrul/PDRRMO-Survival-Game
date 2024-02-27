@@ -13360,7 +13360,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff77eed6a19210645bfb94bf5d81628c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHealth: {fileID: 1348845724}
+  playerHealth: {fileID: 0}
   fillImage: {fileID: 2119970542}
 --- !u!114 &1632941830
 MonoBehaviour:
