@@ -13077,7 +13077,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ffe0ade01461fe41bba56af9fd45644, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startTimeBtwAttack: 0
+  startTimeBtwAttack: 1
   attackPos: {fileID: 993749047}
   whatIsEnemies:
     serializedVersion: 2
