@@ -2,13 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
+using UnityEngine.UI;
 
 public class Character : MonoBehaviour
 {
     private Rigidbody2D rb;
     private Animator playerAnim;
-    public int currentHealth;
-    public int maxHealth;
+    public float currentHealth;
+    public float maxHealth = 10;
     private float moveSpeed;
     private float dirX;
     private bool facingRight = true;
@@ -22,15 +23,19 @@ public class Character : MonoBehaviour
         moveSpeed = 5f;
 
         currentHealth = maxHealth;
+        
     }
 
     void Update()
     {
+        //movements
         dirX = CrossPlatformInputManager.GetAxis("Horizontal") * moveSpeed;
 
         if (CrossPlatformInputManager.GetButtonDown("Jump") && rb.velocity.y == 0)
             rb.AddForce(Vector2.up * 600f);
 
+
+        //animations
         if (Mathf.Abs(dirX) > 0 && rb.velocity.y == 0)
             playerAnim.SetBool("isRunning", true);
         else 
@@ -61,7 +66,7 @@ public class Character : MonoBehaviour
     {
         // dazedTime = startDazedTime;
         // Instantiate(damageEffect, transform.position, Quaternion.identity)
-        currentHealth -= damage;
+        
         Debug.Log("Damage Taken !");
     }
 
