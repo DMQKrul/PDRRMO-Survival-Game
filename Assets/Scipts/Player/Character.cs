@@ -62,11 +62,11 @@ public class Character : MonoBehaviour
         }
     }
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(float damage)
     {
         // dazedTime = startDazedTime;
         // Instantiate(damageEffect, transform.position, Quaternion.identity)
-        
+        currentHealth -= damage;
         Debug.Log("Damage Taken !");
     }
 

@@ -9,10 +9,10 @@ public class Player_attack : MonoBehaviour
     public float startTimeBtwAttack;
 
     public Transform attackPos;
-    public LayerMask whatIsEnemies;
+    public LayerMask Enemy;
     private Animator playerAnim;
     public float attackRange;
-    public int damage;
+    public float damage;
 
     // Reference to the UI button
     public Button attackButton;
@@ -31,10 +31,10 @@ public class Player_attack : MonoBehaviour
             // camAnim.SetTrigger("shake");
             playerAnim.SetBool("isAttacking", true);
             playerAnim.SetBool("isAtkRunning", true);
-            Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
+            Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, Enemy);
             for (int i = 0; i < enemiesToDamage.Length; i++)
             {
-                enemiesToDamage[i].GetComponent<Enemy>().TakeDamage(damage);
+                enemiesToDamage[i].GetComponent<MobHealth>().TakeDamage(damage);
             }
 
             timeBtwAttack = startTimeBtwAttack;

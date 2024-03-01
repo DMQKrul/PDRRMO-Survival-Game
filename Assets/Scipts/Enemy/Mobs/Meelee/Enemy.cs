@@ -4,10 +4,14 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public int health;
+    public float health;
+    public int speed;
+    public float damage;
     private float dazedTime;
+    public Character playerHealth;
+
     public float startDazedTime;
-    public float speed;
+    
     private Animator mob1Anim;
     
 
@@ -40,11 +44,19 @@ public class Enemy : MonoBehaviour
         // transform.Translate(Vector2.left * speed * Time.deltaTime);
     }
 
+    // private void OnCollisionEnter2D(Collision2D collision)
+    // {
+    //     if(collision.gameObject.tag == "Player")
+    //         {
+    //             playerHealth.TakeDamage(damage);
+    //         }
+    // }
     public void TakeDamage(int damage)
     {
         dazedTime = startDazedTime;
         // Instantiate(damageEffect, transform.position, Quaternion.identity)
         health -= damage;
         Debug.Log("Damage Taken !");
+        
     }
 }
