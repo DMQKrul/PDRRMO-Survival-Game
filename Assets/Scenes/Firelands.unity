@@ -13725,7 +13725,7 @@ MonoBehaviour:
   Damage: 2
   enragedAttackDamage: 2
   attackOffset: {x: 0, y: -0.1, z: 0}
-  attackRange: 0.6
+  attackRange: 0.79
   attackMask:
     serializedVersion: 2
     m_Bits: 512
