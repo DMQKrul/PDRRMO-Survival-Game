@@ -5,7 +5,6 @@ using UnityEngine;
 public class MobAttack : MonoBehaviour
 {
     public float Damage = 2f;
-	public int enragedAttackDamage = 40;
 
 	public Vector3 attackOffset;
 	public float attackRange = 1f;
