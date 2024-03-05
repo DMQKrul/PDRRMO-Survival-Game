@@ -20,6 +20,7 @@ public class MobHealth : MonoBehaviour
             return;
 
         health -= damage;
+        Debug.Log("ouch");
 
         if (health <= 0)
         {
