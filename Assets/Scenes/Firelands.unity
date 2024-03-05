@@ -12828,7 +12828,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1168519016}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: bulletpos
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -12866,7 +12866,7 @@ GameObject:
   - component: {fileID: 1200474606}
   - component: {fileID: 1200474608}
   - component: {fileID: 1200474607}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cannon Launcher
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -13559,7 +13559,7 @@ MonoBehaviour:
   attackPos: {fileID: 993749047}
   Enemy:
     serializedVersion: 2
-    m_Bits: 1024
+    m_Bits: 1152
   attackRange: 0.87
   damage: 2
   attackButton: {fileID: 2045585440}
