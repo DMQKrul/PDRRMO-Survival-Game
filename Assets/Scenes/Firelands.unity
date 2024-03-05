@@ -14552,6 +14552,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cannon
       objectReference: {fileID: 0}
+    - target: {fileID: 7642998971964492419, guid: 78c9a119017f5314f9b707bed708dce5, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7642998971964492419, guid: 78c9a119017f5314f9b707bed708dce5, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 7642998971964492422, guid: 78c9a119017f5314f9b707bed708dce5, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -14594,6 +14602,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7642998971964492422, guid: 78c9a119017f5314f9b707bed708dce5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7642998973607391383, guid: 78c9a119017f5314f9b707bed708dce5, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
