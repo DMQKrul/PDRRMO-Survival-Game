@@ -35,7 +35,7 @@ public class CannonBallScript : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            other.gameObject.GetComponent<Character>().currentHealth -= 5;
+            other.gameObject.GetComponent<Character>().currentHealth -= 2;
             Destroy(gameObject);
         }
     }
