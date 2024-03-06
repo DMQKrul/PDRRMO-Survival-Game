@@ -13,7 +13,6 @@ public class RangeMobAttack : MonoBehaviour
 	public float attackRange = 1f;
 	public LayerMask attackMask;
 
-    // Start is called before the first frame update
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");

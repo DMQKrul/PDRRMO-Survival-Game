@@ -18,7 +18,7 @@ public class EnemyAttack : MonoBehaviour
 
     void Update()
     {
-        float distance = Vector2.Distance(transform.position, player.transform.position);
+        float distance = Vector2.Distance(transform.position,player.transform.position);
 
         if(distance < 10)
         {
