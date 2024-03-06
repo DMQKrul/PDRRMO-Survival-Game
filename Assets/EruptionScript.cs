@@ -9,7 +9,6 @@ public class EruptionScript : MonoBehaviour
     public float force;
     private float timer;
     public float damage;
-    public float maxRotation = 360f;
 
     void Start()
     {
@@ -20,9 +19,7 @@ public class EruptionScript : MonoBehaviour
         {
             rb.AddForce(Vector2.up * force, ForceMode2D.Impulse);
         }
-
-        float rot = Mathf.Atan2(-maxRotation, maxRotation) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.Euler(0, 0, rot + -180);
+        
     }
 
     void Update()
