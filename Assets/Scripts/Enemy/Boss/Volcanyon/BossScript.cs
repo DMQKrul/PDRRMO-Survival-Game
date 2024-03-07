@@ -8,9 +8,13 @@ public class BossScript : MonoBehaviour
     public Transform bulletPos;
     public Transform eruptionPos;
     public Transform eruptionFallPos;
+    public Transform eruptionFallPos2;
+    public Transform eruptionFallPos3;
     public GameObject bullet;
     public GameObject eruption;
     public GameObject eruptionFall;
+    public GameObject eruptionFall2;
+    public GameObject eruptionFall3;
     private GameObject player;
 
     void Start()
@@ -37,5 +41,15 @@ public class BossScript : MonoBehaviour
     public void eruptFall()
     {
         Instantiate(eruptionFall, eruptionFallPos.position, Quaternion.identity);
+    }
+
+    public void eruptFall2()
+    {
+        Instantiate(eruptionFall2, eruptionFallPos2.position, Quaternion.identity);
+    }
+    
+    public void eruptFall3()
+    {
+        Instantiate(eruptionFall3, eruptionFallPos3.position, Quaternion.identity);
     }
 }
