@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 7772642958128240324}
   - component: {fileID: 7772642958128240327}
   - component: {fileID: 7772642958128240326}
+  - component: {fileID: 2808219637517336387}
   m_Layer: 10
   m_Name: Fire Spirit
   m_TagString: Enemy
@@ -126,7 +127,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 3
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -142,10 +143,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.060340524, y: -0.13576597}
+  m_Offset: {x: 0.093030095, y: -0.4827791}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -156,7 +157,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.80691123, y: 0.72846806}
+  m_Size: {x: 0.18832278, y: 0.03444183}
   m_EdgeRadius: 0
 --- !u!114 &7772642958128240324
 MonoBehaviour:
@@ -184,7 +185,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 2
-  enragedAttackDamage: 2
   attackOffset: {x: 0, y: -0.1, z: 0}
   attackRange: 0.6
   attackMask:
@@ -204,3 +204,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 1
   isInvulnerable: 0
+--- !u!70 &2808219637517336387
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7772642958128240321}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.08298123, y: -0.14081687}
+  m_Size: {x: 0.64292884, y: 0.71836627}
+  m_Direction: 0

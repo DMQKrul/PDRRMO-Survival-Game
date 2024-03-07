@@ -2,30 +2,37 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CannonBallScript : MonoBehaviour
+public class EruptionScript : MonoBehaviour
 {
-    private GameObject player;
+    private GameObject target;
     private Rigidbody2D rb;
     public float force;
     private float timer;
+    public float damage;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        player = GameObject.FindGameObjectWithTag("Player");
+        target = GameObject.FindGameObjectWithTag("Target");
 
-        Vector3 direction = player.transform.position - transform.position;
+        Vector3 direction = target.transform.position - transform.position;
         rb.velocity = new Vector2(direction.x, direction.y).normalized * force;
 
         float rot = Mathf.Atan2(-direction.y, -direction.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.Euler(0, 0, rot + 90);
+        transform.rotation = Quaternion.Euler(0, 0, rot + -90);
+
+        // if (rb != null)
+        // {
+        //     rb.AddForce(Vector2.up * force, ForceMode2D.Impulse);
+        // }
+        
     }
 
     void Update()
     {
         timer += Time.deltaTime;
 
-        if(timer > 7)
+        if(timer > 5)
         {
             Destroy(gameObject);
         }
@@ -33,9 +40,9 @@ public class CannonBallScript : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Target"))
         {
-            other.gameObject.GetComponent<Character>().currentHealth -= 2;
+            other.gameObject.GetComponent<Character>().TakeDamage(damage);
             Destroy(gameObject);
         }
     }
