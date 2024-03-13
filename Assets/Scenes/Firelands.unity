@@ -6910,6 +6910,7 @@ GameObject:
   - component: {fileID: 925515851}
   - component: {fileID: 925515850}
   - component: {fileID: 925515853}
+  - component: {fileID: 925515854}
   m_Layer: 0
   m_Name: Volcanyon
   m_TagString: Untagged
@@ -7029,6 +7030,20 @@ MonoBehaviour:
   eruptionFall: {fileID: 9055195206802452029, guid: 0dc7974ef7ad6ae4ba6fa703823a44b9, type: 3}
   eruptionFall2: {fileID: 9055195206802452029, guid: 0dc7974ef7ad6ae4ba6fa703823a44b9, type: 3}
   eruptionFall3: {fileID: 9055195206802452029, guid: 0dc7974ef7ad6ae4ba6fa703823a44b9, type: 3}
+--- !u!114 &925515854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 925515849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a460291d99d9cff4b9d632c0f521220d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 1
+  isInvulnerable: 0
 --- !u!1 &941204210
 GameObject:
   m_ObjectHideFlags: 0
@@ -7363,6 +7378,71 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1333356531}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1148197914
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1148197916}
+  - component: {fileID: 1148197915}
+  m_Layer: 0
+  m_Name: Enemy Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1148197915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1148197914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2d22dd438864c145822d396cd341d08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  countdown: 2
+  spawnPoint: {fileID: 1148197914}
+  waves:
+  - enemies:
+    - {fileID: 213168278370178734, guid: 3527e6750179483489d35a5f8f630e16, type: 3}
+    - {fileID: 7772642958128240326, guid: 3d6b8bd524d0d9c4e94917428c9ab0f9, type: 3}
+    timeToNextEnemy: 2
+    timeToNextWave: 1
+    enemiesLeft: 0
+  - enemies:
+    - {fileID: 7772642958128240326, guid: 3d6b8bd524d0d9c4e94917428c9ab0f9, type: 3}
+    - {fileID: 7772642958128240326, guid: 3d6b8bd524d0d9c4e94917428c9ab0f9, type: 3}
+    timeToNextEnemy: 2
+    timeToNextWave: 1
+    enemiesLeft: 0
+  - enemies:
+    - {fileID: 925515854}
+    timeToNextEnemy: 2
+    timeToNextWave: 1
+    enemiesLeft: 0
+  currentWaveIndex: 0
+--- !u!4 &1148197916
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1148197914}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.22, y: 1.07, z: -0.3091428}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1168519015
 GameObject:

@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 7772642958128240327}
   - component: {fileID: 7772642958128240326}
   - component: {fileID: 2808219637517336387}
+  - component: {fileID: -3301004311107069222}
   m_Layer: 7
   m_Name: Fire Spirit
   m_TagString: Enemy
@@ -220,3 +221,15 @@ CapsuleCollider2D:
   m_Offset: {x: 0.08298123, y: -0.14081687}
   m_Size: {x: 0.64292884, y: 0.71836627}
   m_Direction: 0
+--- !u!114 &-3301004311107069222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7772642958128240321}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9c67085e636eb348b819a01407e847d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
