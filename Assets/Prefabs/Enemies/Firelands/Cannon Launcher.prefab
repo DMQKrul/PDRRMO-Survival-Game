@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 213168278370178737}
   - component: {fileID: 213168278370178734}
   - component: {fileID: 213168278370178736}
+  - component: {fileID: 8271348742118176299}
   m_Layer: 7
   m_Name: Cannon Launcher
   m_TagString: Enemy
@@ -222,6 +223,18 @@ CapsuleCollider2D:
   m_Offset: {x: 0.0075691543, y: -0.04541556}
   m_Size: {x: 0.65181386, y: 0.9091689}
   m_Direction: 0
+--- !u!114 &8271348742118176299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 213168278370178729}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9c67085e636eb348b819a01407e847d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &213168278402052134
 GameObject:
   m_ObjectHideFlags: 0

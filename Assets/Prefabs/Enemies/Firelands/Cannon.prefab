@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7642998971964492422}
   - component: {fileID: 7642998971964492417}
   - component: {fileID: 7642998971964492416}
+  - component: {fileID: -392255331224996627}
   m_Layer: 0
   m_Name: Cannon
   m_TagString: Untagged
@@ -100,6 +101,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 7487122442003403703, guid: 18218c201589212488ffba4144fcd2f1, type: 3}
   bulletPos: {fileID: 7642998973607391380}
+--- !u!114 &-392255331224996627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7642998971964492419}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9c67085e636eb348b819a01407e847d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7642998973607391383
 GameObject:
   m_ObjectHideFlags: 0

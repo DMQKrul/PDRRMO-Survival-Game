@@ -7,12 +7,17 @@ public class MobHealth : MonoBehaviour
 
     public float health = 1;
     private Animator animator;
-
+    private WaveSpawner waveSpawner;
     public bool isInvulnerable = false;
+
+    
 
     void Start()
     {
         animator = GetComponent<Animator>();
+        // Find a component of type T in the scene
+        // waveSpawner= FindObjectOfType<WaveSpawner>();
+        waveSpawner = GetComponentInParent<WaveSpawner>();
     }
     public void TakeDamage(float damage)
     {
@@ -37,5 +42,6 @@ public class MobHealth : MonoBehaviour
     public void Destroy()
     {
         Destroy(gameObject);
+        waveSpawner.waves[waveSpawner.currentWaveIndex].enemiesLeft--;
     }
 }
