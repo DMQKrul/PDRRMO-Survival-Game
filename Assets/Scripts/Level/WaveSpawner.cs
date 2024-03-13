@@ -5,7 +5,7 @@ using UnityEngine;
 public class WaveSpawner : MonoBehaviour
 {
     [SerializeField] private float countdown;
-    [SerializeField] private GameObject spawnPoint;
+    [SerializeField] private GameObject[] spawnPoints;
 
     public Wave[] waves;
     public int currentWaveIndex = 0;
@@ -46,20 +46,24 @@ public class WaveSpawner : MonoBehaviour
     }
 
 
-    private IEnumerator SpawnWave()
+  private IEnumerator SpawnWave()
     {
         if (currentWaveIndex < waves.Length)
         {
-            for (int i = 0; i < waves[currentWaveIndex].enemies.Length; i++)
-            {
-                MobHealth enemy = Instantiate(waves[currentWaveIndex].enemies[i], spawnPoint.transform);
+            Wave currentWave = waves[currentWaveIndex];
 
+            for (int i = 0; i < currentWave.enemies.Length; i++)
+            {
+                // Randomly select a spawn point
+                GameObject spawnPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];
+
+                // Instantiate enemy at the selected spawn point
+                MobHealth enemy = Instantiate(currentWave.enemies[i], spawnPoint.transform.position, Quaternion.identity);
                 enemy.transform.SetParent(spawnPoint.transform);
 
-                yield return new WaitForSeconds(waves[currentWaveIndex].timeToNextEnemy);
+                yield return new WaitForSeconds(currentWave.timeToNextEnemy);
             }
         }
-
     }
     
 }
