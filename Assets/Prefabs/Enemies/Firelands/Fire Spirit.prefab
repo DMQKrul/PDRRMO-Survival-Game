@@ -185,9 +185,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad56fc3d242be58468f1496751662dcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackSoundClip: {fileID: 8300000, guid: c62d6da2002e21f429c8b2dc580d4bbc, type: 3}
   Damage: 2
   attackOffset: {x: 0, y: -0.1, z: 0}
-  attackRange: 0.6
+  attackRange: 1
   attackMask:
     serializedVersion: 2
     m_Bits: 512
