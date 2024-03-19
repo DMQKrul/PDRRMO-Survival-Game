@@ -139,6 +139,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3b9d7f949ef08e45b887e58a26cac71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackSoundClip: {fileID: 8300000, guid: ea981ba09b4b96240b281dab06588052, type: 3}
+  attackVolume: 1
   bulletPos: {fileID: 213168278402052137}
   bullet: {fileID: 7487122442003403703, guid: 18218c201589212488ffba4144fcd2f1, type: 3}
   attackOffset: {x: 0, y: 0, z: 0}

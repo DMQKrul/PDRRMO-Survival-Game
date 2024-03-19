@@ -158,5 +158,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea4c46ade31912849a630d171333e923, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  soundEffect: {fileID: 8300000, guid: 7ed7c46bc83347b46976d4ce59c4489a, type: 3}
+  attackVolume: 1
   force: 7
   damage: 2

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class RangeMobAttack : MonoBehaviour
 {
+    [SerializeField] private AudioClip attackSoundClip;
+    public float attackVolume = 1f;
 
     public Transform bulletPos;
     public GameObject bullet;
@@ -20,6 +22,7 @@ public class RangeMobAttack : MonoBehaviour
 
     public void shoot()
     {        
+        SoundFXManager.instance.PlaySoundFXClip(attackSoundClip, transform, attackVolume);
         Instantiate(bullet, bulletPos.position, Quaternion.identity);
     }
 

@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class CannonBallScript : MonoBehaviour
 {
+    [SerializeField] private AudioClip soundEffect;
+    public float volume = 1f;
+
     private GameObject player;
     private Rigidbody2D rb;
     public float force;
@@ -12,6 +15,7 @@ public class CannonBallScript : MonoBehaviour
 
     void Start()
     {
+        SoundFXManager.instance.PlaySoundFXClip(soundEffect, transform, volume);
         rb = GetComponent<Rigidbody2D>();
         player = GameObject.FindGameObjectWithTag("Player");
 
