@@ -18,6 +18,11 @@ public class MobFlip : MonoBehaviour
         }
     }
 
+	public void Update()
+	{
+		LookAtPlayer();
+	}
+
 	public void LookAtPlayer()
 	{
 		Vector3 flipped = transform.localScale;
