@@ -6,6 +6,10 @@ using UnityEngine.UI;
 
 public class Character : MonoBehaviour
 {
+//sfx
+    [SerializeField] private AudioClip jumpSoundClip;
+    [SerializeField] private AudioClip walkSoundClip;
+
     private Rigidbody2D rb;
     private Animator playerAnim;
     public float currentHealth;
@@ -32,14 +36,23 @@ public class Character : MonoBehaviour
         dirX = CrossPlatformInputManager.GetAxis("Horizontal") * moveSpeed;
 
         if (CrossPlatformInputManager.GetButtonDown("Jump") && rb.velocity.y == 0)
+        {
             rb.AddForce(Vector2.up * 600f);
+            SoundFXManager.instance.PlaySoundFXClip(jumpSoundClip, transform, 1f);
+        }
+            
 
 
         //animations
         if (Mathf.Abs(dirX) > 0 && rb.velocity.y == 0)
-            playerAnim.SetBool("isRunning", true);
-        else 
-            playerAnim.SetBool("isRunning", false);
+            {
+                playerAnim.SetBool("isRunning", true);
+            }
+            
+        else
+            {
+                playerAnim.SetBool("isRunning", false);
+            }
 
         if (rb.velocity.y == 0)
         {
@@ -48,8 +61,9 @@ public class Character : MonoBehaviour
         }
 
         if (rb.velocity.y > 0)
+        {
             playerAnim.SetBool("isJumping", true);
-
+        }
         if (rb.velocity.y < 0)
         {
             playerAnim.SetBool("isJumping", false);

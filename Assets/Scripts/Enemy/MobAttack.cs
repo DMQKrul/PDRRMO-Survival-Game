@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class MobAttack : MonoBehaviour
 {
+	[SerializeField] private AudioClip attackSoundClip;
+	public float volume = 1f;
+
     public float Damage = 2f;
 
 	public Vector3 attackOffset;
@@ -15,7 +18,7 @@ public class MobAttack : MonoBehaviour
 		Vector3 pos = transform.position;
 		pos += transform.right * attackOffset.x;
 		pos += transform.up * attackOffset.y;
-
+		SoundFXManager.instance.PlaySoundFXClip(attackSoundClip, transform, volume);
 		Collider2D colInfo = Physics2D.OverlapCircle(pos, attackRange, attackMask);
 		if (colInfo != null)
 		{
