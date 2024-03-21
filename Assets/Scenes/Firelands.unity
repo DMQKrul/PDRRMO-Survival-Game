@@ -6698,6 +6698,7 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -6771,6 +6772,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &519420033
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 551bd272315f0294d835bb1b418ad282, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &590449787
 GameObject:
   m_ObjectHideFlags: 0
@@ -6880,7 +6902,7 @@ Transform:
   m_GameObject: {fileID: 601724412}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 5.1208797, y: -0.65, z: 7.37}
-  m_LocalScale: {x: 11.217619, y: 9.422485, z: 1}
+  m_LocalScale: {x: 12, y: 9.422485, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2009823103}
@@ -6930,6 +6952,51 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 25
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &882549262
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 882549264}
+  - component: {fileID: 882549263}
+  m_Layer: 0
+  m_Name: Shake Manager
+  m_TagString: ScreenShake
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &882549263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 882549262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d541d25648acfa47bec8c9bb7769ecb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camAnim: {fileID: 519420033}
+--- !u!4 &882549264
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 882549262}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -11.203763, y: 3.5477445, z: -0.29592645}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &941204210
 GameObject:
@@ -7300,7 +7367,6 @@ MonoBehaviour:
   countdown: 2
   spawnPoints:
   - {fileID: 1888142615}
-  - {fileID: 1394889840}
   waves:
   - enemies:
     - {fileID: 5428198415705824557, guid: 84706052dff363d488ce5ffbca05da1d, type: 3}
@@ -8198,8 +8264,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpSoundClip: {fileID: 8300000, guid: 037aba1fd182e4d4c84372a301c78a56, type: 3}
   walkSoundClip: {fileID: 8300000, guid: 34443bc7fec7e5647be0b8dc0724c851, type: 3}
-  currentHealth: 5
-  maxHealth: 5
+  currentHealth: 100
+  maxHealth: 100
 --- !u!114 &1348845723
 MonoBehaviour:
   m_ObjectHideFlags: 0
