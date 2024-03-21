@@ -6312,6 +6312,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cannon Launcher (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 213168278370178729, guid: 3527e6750179483489d35a5f8f630e16, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 213168278370178732, guid: 3527e6750179483489d35a5f8f630e16, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -7013,13 +7017,14 @@ GameObject:
   - component: {fileID: 925515850}
   - component: {fileID: 925515853}
   - component: {fileID: 925515854}
-  m_Layer: 0
+  - component: {fileID: 925515855}
+  m_Layer: 7
   m_Name: Volcanyon
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!95 &925515850
 Animator:
   serializedVersion: 5
@@ -7146,6 +7151,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 1
   isInvulnerable: 0
+--- !u!61 &925515855
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 925515849}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0025071204, y: -0.03509918}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.9548724, y: 0.7392631}
+  m_EdgeRadius: 0
 --- !u!1 &941204210
 GameObject:
   m_ObjectHideFlags: 0

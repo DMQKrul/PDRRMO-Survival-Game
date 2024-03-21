@@ -13,7 +13,7 @@ public class Attack2 : StateMachineBehaviour
     {
         if(animator.GetCurrentAnimatorStateInfo(0).normalizedTime <= 1)
         {
-            animator.SetTrigger("Exhausted");
+            animator.SetTrigger("Attack1");
         }
     }
 

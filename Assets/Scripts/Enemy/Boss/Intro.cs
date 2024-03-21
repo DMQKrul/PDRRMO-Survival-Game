@@ -7,13 +7,7 @@ public class Intro : StateMachineBehaviour
     private int rand;
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        rand = Random.Range(0, 2);
-
-        if (rand == 0)
-        {
-            animator.SetTrigger("Attack1");
-        }
-        else
+        if(animator.GetCurrentAnimatorStateInfo(0).normalizedTime <= 1)
         {
             animator.SetTrigger("Attack2");
         }
