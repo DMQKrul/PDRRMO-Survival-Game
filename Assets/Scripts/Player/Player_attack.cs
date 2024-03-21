@@ -35,17 +35,21 @@ public class Player_attack : MonoBehaviour
             playerAnim.SetBool("isAttacking", true);
             playerAnim.SetBool("isAtkRunning", true);
             SoundFXManager.instance.PlaySoundFXClip(attackSoundClip, transform, 1f);
-            Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, Enemy);
-            for (int i = 0; i < enemiesToDamage.Length; i++)
-            {
-                enemiesToDamage[i].GetComponent<MobHealth>().TakeDamage(damage);
-            }
 
             timeBtwAttack = startTimeBtwAttack;
         } else
         {
             timeBtwAttack -= Time.deltaTime;
         }
+    }
+
+    public void AttackDamage()
+    {
+        Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, Enemy);
+            for (int i = 0; i < enemiesToDamage.Length; i++)
+            {
+                enemiesToDamage[i].GetComponent<MobHealth>().TakeDamage(damage);
+            }
     }
 
     public void endAttack()
