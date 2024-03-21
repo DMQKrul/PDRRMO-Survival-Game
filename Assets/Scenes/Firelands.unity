@@ -7383,7 +7383,7 @@ MonoBehaviour:
     - {fileID: 5428198415705824557, guid: 84706052dff363d488ce5ffbca05da1d, type: 3}
     - {fileID: 213168278370178734, guid: 3527e6750179483489d35a5f8f630e16, type: 3}
     - {fileID: 5428198415705824557, guid: 84706052dff363d488ce5ffbca05da1d, type: 3}
-    timeToNextEnemy: 8
+    timeToNextEnemy: 10
     timeToNextWave: 1
     enemiesLeft: 0
   currentWaveIndex: 0
@@ -8289,8 +8289,8 @@ MonoBehaviour:
   Enemy:
     serializedVersion: 2
     m_Bits: 1152
-  attackRange: 0.87
-  damage: 2
+  attackRange: 1
+  damage: 1
   attackButton: {fileID: 2045585440}
 --- !u!114 &1348845724
 MonoBehaviour:
@@ -9567,6 +9567,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2273918866382750577, guid: b11409e04f9b0b344b2228513960a79f, type: 3}
+      propertyPath: health
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 2273918866382750578, guid: b11409e04f9b0b344b2228513960a79f, type: 3}
       propertyPath: eruptionFallPos
       value: 
