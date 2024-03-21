@@ -9,11 +9,13 @@ public class EruptionScript : MonoBehaviour
     public float force;
     private float timer;
     public float damage;
+    private CamShake shake;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         target = GameObject.FindGameObjectWithTag("Target");
+        shake = GameObject.FindGameObjectWithTag("ScreenShake").GetComponent<CamShake>();
 
         Vector3 direction = target.transform.position - transform.position;
         rb.velocity = new Vector2(direction.x, direction.y).normalized * force;
@@ -42,6 +44,7 @@ public class EruptionScript : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Target"))
         {
+            shake.CamShaking();
             other.gameObject.GetComponent<Character>().TakeDamage(damage);
             Destroy(gameObject);
         }

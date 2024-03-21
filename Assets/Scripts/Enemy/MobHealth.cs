@@ -39,7 +39,7 @@ public class MobHealth : MonoBehaviour
     }
 
 
-    public void Destroy()
+    private void Destroy()
     {
         Destroy(gameObject);
         waveSpawner.waves[waveSpawner.currentWaveIndex].enemiesLeft--;

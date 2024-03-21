@@ -90,7 +90,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9144a0741e11c3c48b8096786b6421ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2.5
+  speed: 2
   attackRange: 1
 --- !u!91 &9100000
 AnimatorController:
@@ -163,7 +163,7 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: -7172558135793081332}
-    m_Position: {x: 270, y: 120, z: 0}
+    m_Position: {x: 270, y: 130, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 829692980318636767}
     m_Position: {x: 510, y: 200, z: 0}

@@ -12,12 +12,14 @@ public class CannonBallScript : MonoBehaviour
     public float force;
     private float timer;
     public float damage;
+    private CamShake shake;
 
     void Start()
     {
         SoundFXManager.instance.PlaySoundFXClip(soundEffect, transform, volume);
         rb = GetComponent<Rigidbody2D>();
         player = GameObject.FindGameObjectWithTag("Player");
+        shake = GameObject.FindGameObjectWithTag("ScreenShake").GetComponent<CamShake>();
 
         Vector3 direction = player.transform.position - transform.position;
         rb.velocity = new Vector2(direction.x, direction.y).normalized * force;
@@ -40,6 +42,7 @@ public class CannonBallScript : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            shake.CamShaking();
             other.gameObject.GetComponent<Character>().TakeDamage(damage);
             Destroy(gameObject);
         }

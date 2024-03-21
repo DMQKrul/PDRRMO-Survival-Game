@@ -72,8 +72,18 @@ public class Character : MonoBehaviour
 
         if (currentHealth <= 0)
         {
-            Destroy(gameObject);
+            Died();
         }
+    }
+
+    void Died()
+    {
+        playerAnim.SetTrigger("Die");
+    }
+
+    private void Dead()
+    {
+        Destroy(gameObject);
     }
 
     public void TakeDamage(float damage)

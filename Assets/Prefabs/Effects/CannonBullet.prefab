@@ -162,7 +162,7 @@ MonoBehaviour:
   soundEffect: {fileID: 8300000, guid: 0b4e00fffe237264893b86e83457ad92, type: 3}
   volume: 1
   force: 7
-  damage: 5
+  damage: 2
 --- !u!61 &-3594138189340516602
 BoxCollider2D:
   m_ObjectHideFlags: 0

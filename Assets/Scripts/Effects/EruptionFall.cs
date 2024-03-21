@@ -9,11 +9,13 @@ public class EruptionFall : MonoBehaviour
     public float force;
     private float timer;
     public float damage;
+    private CamShake shake;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         player = GameObject.FindGameObjectWithTag("Player");
+        shake = GameObject.FindGameObjectWithTag("ScreenShake").GetComponent<CamShake>();
 
         if (rb != null)
         {
@@ -36,6 +38,7 @@ public class EruptionFall : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            shake.CamShaking();
             other.gameObject.GetComponent<Character>().TakeDamage(damage);
             Destroy(gameObject);
         }

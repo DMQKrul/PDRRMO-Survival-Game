@@ -16,6 +16,7 @@ public class Player_attack : MonoBehaviour
     private Animator playerAnim;
     public float attackRange;
     public float damage;
+    private CamShake shake;
 
     // Reference to the UI button
     public Button attackButton;
@@ -25,6 +26,7 @@ public class Player_attack : MonoBehaviour
         // Register a method to be called when the button is clicked
         playerAnim = GetComponent<Animator>();
         attackButton.onClick.AddListener(Attack);
+        shake = GameObject.FindGameObjectWithTag("ScreenShake").GetComponent<CamShake>();
     }
 
     public void Attack()
@@ -48,6 +50,7 @@ public class Player_attack : MonoBehaviour
         Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, Enemy);
             for (int i = 0; i < enemiesToDamage.Length; i++)
             {
+                shake.CamShaking();
                 enemiesToDamage[i].GetComponent<MobHealth>().TakeDamage(damage);
             }
     }
