@@ -9,10 +9,12 @@ public class PauseMenu : MonoBehaviour
     public GameObject healthBar;
     public GameObject pauseBtn;
     public GameObject controls;
+    public GameObject blurBg;
 
     public void Pause()
     {
         PausePanel.SetActive(true);
+        blurBg.SetActive(true);
         healthBar.SetActive(false);
         pauseBtn.SetActive(false);
         controls.SetActive(false);
@@ -22,6 +24,7 @@ public class PauseMenu : MonoBehaviour
     public void Resume()
     {
         PausePanel.SetActive(false);
+        blurBg.SetActive(false);
         healthBar.SetActive(true);
         pauseBtn.SetActive(true);
         controls.SetActive(true);
