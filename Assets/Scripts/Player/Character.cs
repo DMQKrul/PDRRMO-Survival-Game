@@ -19,6 +19,12 @@ public class Character : MonoBehaviour
     private bool facingRight = true;
     private Vector3 localScale;
 
+    public GameObject GameOverPanel;
+    public GameObject healthBar;
+    public GameObject pauseBtn;
+    public GameObject controls;
+    public GameObject blurBg;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -110,5 +116,15 @@ public class Character : MonoBehaviour
             localScale.x *= -1;
 
         transform.localScale = localScale;
+    }
+
+    public void GameOverTrue()
+    {
+        GameOverPanel.SetActive(true);
+        blurBg.SetActive(true);
+        healthBar.SetActive(false);
+        pauseBtn.SetActive(false);
+        controls.SetActive(false);
+        Time.timeScale = 0f;
     }
 }
