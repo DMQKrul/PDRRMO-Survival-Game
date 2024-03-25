@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class GameOver : MonoBehaviour
 {
+    [SerializeField] private AudioClip btnPressed;
+    public float btnPressVolume = 1f;
+
     public GameObject GameOverPanel;
     public GameObject healthBar;
     public GameObject pauseBtn;
@@ -22,12 +25,14 @@ public class GameOver : MonoBehaviour
 
     public void Retry()
     {
+        SoundFXManager.instance.PlaySoundFXClip(btnPressed, transform, btnPressVolume);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         Time.timeScale = 1f;
     }
 
     public void GoToMainMenu()
     {
+        SoundFXManager.instance.PlaySoundFXClip(btnPressed, transform, btnPressVolume);
         SceneManager.LoadScene("MainMenu");
     }
 }

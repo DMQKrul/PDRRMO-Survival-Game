@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
+    [SerializeField] private AudioClip btnPress;
+    public float btnVolume = 1f;
+
     public GameObject PausePanel;
     public GameObject healthBar;
     public GameObject pauseBtn;
@@ -17,6 +20,7 @@ public class PauseMenu : MonoBehaviour
 
     public void Pause()
     {
+        SoundFXManager.instance.PlaySoundFXClip(btnPress, transform, btnVolume);
         PausePanel.SetActive(true);
         blurBg.SetActive(true);
         healthBar.SetActive(false);
@@ -27,6 +31,7 @@ public class PauseMenu : MonoBehaviour
 
     public void Resume()
     {
+        SoundFXManager.instance.PlaySoundFXClip(btnPress, transform, btnVolume);
         PausePanel.SetActive(false);
         blurBg.SetActive(false);
         healthBar.SetActive(true);
@@ -37,35 +42,41 @@ public class PauseMenu : MonoBehaviour
 
     public void GoBack()
     {
+        SoundFXManager.instance.PlaySoundFXClip(btnPress, transform, btnVolume);
         menuConfirm.SetActive(true);
         blurBg2.SetActive(true);
     }
 
     public void GoBackToMain()
     {
+        SoundFXManager.instance.PlaySoundFXClip(btnPress, transform, btnVolume);
         Time.timeScale = 1f;
         SceneManager.LoadScene("MainMenu");
     }
 
     public void NoMenu()
     {
+        SoundFXManager.instance.PlaySoundFXClip(btnPress, transform, btnVolume);
         menuConfirm.SetActive(false);
         blurBg2.SetActive(false);
     }
 
     public void Exit()
     {
+        SoundFXManager.instance.PlaySoundFXClip(btnPress, transform, btnVolume);
         quitConfirm.SetActive(true);
         blurBg3.SetActive(true);
     }
 
     public void QuitGame()
     {
+        SoundFXManager.instance.PlaySoundFXClip(btnPress, transform, btnVolume);
         Application.Quit();
     }
 
     public void NoQuit()
     {
+        SoundFXManager.instance.PlaySoundFXClip(btnPress, transform, btnVolume);
         quitConfirm.SetActive(false);
         blurBg3.SetActive(false);
     }

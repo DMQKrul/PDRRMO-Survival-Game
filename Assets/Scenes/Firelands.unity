@@ -8242,6 +8242,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c487cfd2f3411b4292050a9e94bbbfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  btnPressed: {fileID: 8300000, guid: 8b32184ccf780db42b10a60cc1af16c8, type: 3}
+  btnPressVolume: 1
   GameOverPanel: {fileID: 369037690}
   healthBar: {fileID: 1765752340}
   pauseBtn: {fileID: 1310704547}
@@ -9946,6 +9948,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 617c8ee5ba77ace448f0938224fc3618, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  btnPress: {fileID: 8300000, guid: 8b32184ccf780db42b10a60cc1af16c8, type: 3}
+  btnVolume: 1
   PausePanel: {fileID: 1765752340}
   healthBar: {fileID: 1632941827}
   pauseBtn: {fileID: 1310704547}
