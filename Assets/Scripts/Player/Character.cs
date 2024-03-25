@@ -10,6 +10,12 @@ public class Character : MonoBehaviour
     [SerializeField] private AudioClip jumpSoundClip;
     [SerializeField] private AudioClip walkSoundClip;
 
+    [SerializeField] private AudioClip dmgTaken;
+    public float dmgTakenVolume = 1f;
+
+    [SerializeField] private AudioClip gameOvr;
+    public float gameOvrVolume = 1f;
+
     private Rigidbody2D rb;
     private Animator playerAnim;
     public float currentHealth;
@@ -84,6 +90,7 @@ public class Character : MonoBehaviour
 
     void Died()
     {
+        SoundFXManager.instance.PlaySoundFXClip(gameOvr, transform, gameOvrVolume);
         playerAnim.SetTrigger("Die");
     }
 
@@ -96,6 +103,7 @@ public class Character : MonoBehaviour
     {
         // dazedTime = startDazedTime;
         // Instantiate(damageEffect, transform.position, Quaternion.identity)
+        SoundFXManager.instance.PlaySoundFXClip(dmgTaken, transform, dmgTakenVolume);
         currentHealth -= damage;
         Debug.Log("Damage Taken !");
     }

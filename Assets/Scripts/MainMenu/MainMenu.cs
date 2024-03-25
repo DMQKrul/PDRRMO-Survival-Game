@@ -8,5 +8,6 @@ public class MainMenu : MonoBehaviour
     public void PlayGame()
     {
         SceneManager.LoadScene("Firelands");
+        Time.timeScale = 1f;
     }
 }

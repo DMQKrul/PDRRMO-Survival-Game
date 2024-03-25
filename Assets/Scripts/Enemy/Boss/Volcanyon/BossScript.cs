@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class BossScript : MonoBehaviour
 {
+    [SerializeField] private AudioClip atkSoundClip;
+    public float atkVolume = 1f;
+
+    [SerializeField] private AudioClip atkSoundClip2;
+    public float atkVolume2 = 1f;
+
     private Animator anim;
     public Transform bulletPos;
     public Transform eruptionPos;
@@ -30,11 +36,13 @@ public class BossScript : MonoBehaviour
 
     public void shoot()
     {
+        SoundFXManager.instance.PlaySoundFXClip(atkSoundClip, transform, atkVolume);
         Instantiate(bullet, bulletPos.position, Quaternion.identity);
     }
     
     public void erupt()
     {
+        SoundFXManager.instance.PlaySoundFXClip(atkSoundClip2, transform, atkVolume2);
         Instantiate(eruption, eruptionPos.position, Quaternion.identity);
     }
 
