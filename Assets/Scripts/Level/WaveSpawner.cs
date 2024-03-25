@@ -45,8 +45,7 @@ public class WaveSpawner : MonoBehaviour
         }
     }
 
-
-  private IEnumerator SpawnWave()
+    private IEnumerator SpawnWave()
     {
         if (currentWaveIndex < waves.Length)
         {
@@ -54,8 +53,19 @@ public class WaveSpawner : MonoBehaviour
 
             for (int i = 0; i < currentWave.enemies.Length; i++)
             {
-                // Randomly select a spawn point
-                GameObject spawnPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];
+                // Select a spawn point based on the wave index
+                GameObject spawnPoint;
+
+                if (currentWaveIndex == waves.Length - 1)
+                {
+                    // Use a fixed spawn point for the last wave
+                    spawnPoint = spawnPoints[1]; // Change this index to the desired fixed spawn point
+                }
+                else
+                {
+                    // Randomly select a spawn point for other waves
+                    spawnPoint = spawnPoints[0];
+                }
 
                 // Instantiate enemy at the selected spawn point
                 MobHealth enemy = Instantiate(currentWave.enemies[i], spawnPoint.transform.position, Quaternion.identity);
@@ -65,15 +75,14 @@ public class WaveSpawner : MonoBehaviour
             }
         }
     }
-    
 }
 
 [System.Serializable]
 public class Wave
 {
-     public MobHealth[] enemies;
-     public float timeToNextEnemy;
-     public float timeToNextWave;
+    public MobHealth[] enemies;
+    public float timeToNextEnemy;
+    public float timeToNextWave;
 
-     [HideInInspector] public int enemiesLeft;
+    [HideInInspector] public int enemiesLeft;
 }

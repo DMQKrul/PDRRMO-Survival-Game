@@ -1,0 +1,185 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1770066209
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1770066210}
+  m_Layer: 0
+  m_Name: Eruption Spawner (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1770066210
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1770066209}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.0633334, y: 0.93166673, z: 0.04119448}
+  m_LocalScale: {x: 0.16666667, y: 0.16666667, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4204354537976728918}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1916757065
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1916757066}
+  m_Layer: 0
+  m_Name: Eruption Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1916757066
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1916757065}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.065, y: 0.93, z: 0.04119448}
+  m_LocalScale: {x: 0.16666667, y: 0.16666667, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4204354537976728918}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2098020269
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2098020270}
+  m_Layer: 0
+  m_Name: Eruption Spawner (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2098020270
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2098020269}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.06499998, y: 0.9333334, z: 0.04119448}
+  m_LocalScale: {x: 0.16666667, y: 0.16666667, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4204354537976728918}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &2726449107104828965
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2273918866382750577, guid: b11409e04f9b0b344b2228513960a79f, type: 3}
+      propertyPath: health
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 2273918866382750578, guid: b11409e04f9b0b344b2228513960a79f, type: 3}
+      propertyPath: atkSoundClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 6d792ededfb6792409fec647bbc084c2, type: 3}
+    - target: {fileID: 2273918866382750578, guid: b11409e04f9b0b344b2228513960a79f, type: 3}
+      propertyPath: atkSoundClip2
+      value: 
+      objectReference: {fileID: 8300000, guid: d4bc382ffcaf6df47b797d6bcaa0637a, type: 3}
+    - target: {fileID: 2273918866382750578, guid: b11409e04f9b0b344b2228513960a79f, type: 3}
+      propertyPath: eruptionFallPos
+      value: 
+      objectReference: {fileID: 1916757066}
+    - target: {fileID: 2273918866382750578, guid: b11409e04f9b0b344b2228513960a79f, type: 3}
+      propertyPath: eruptionFallPos2
+      value: 
+      objectReference: {fileID: 1770066210}
+    - target: {fileID: 2273918866382750578, guid: b11409e04f9b0b344b2228513960a79f, type: 3}
+      propertyPath: eruptionFallPos3
+      value: 
+      objectReference: {fileID: 2098020270}
+    - target: {fileID: 2273918866382750579, guid: b11409e04f9b0b344b2228513960a79f, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2273918866382750579, guid: b11409e04f9b0b344b2228513960a79f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2273918866382750579, guid: b11409e04f9b0b344b2228513960a79f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 2273918866382750579, guid: b11409e04f9b0b344b2228513960a79f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2273918866382750579, guid: b11409e04f9b0b344b2228513960a79f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2273918866382750579, guid: b11409e04f9b0b344b2228513960a79f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2273918866382750579, guid: b11409e04f9b0b344b2228513960a79f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2273918866382750579, guid: b11409e04f9b0b344b2228513960a79f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2273918866382750579, guid: b11409e04f9b0b344b2228513960a79f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2273918866382750579, guid: b11409e04f9b0b344b2228513960a79f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2273918866382750579, guid: b11409e04f9b0b344b2228513960a79f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2273918866382750582, guid: b11409e04f9b0b344b2228513960a79f, type: 3}
+      propertyPath: m_Name
+      value: Volcanyon Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 2273918866382750582, guid: b11409e04f9b0b344b2228513960a79f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b11409e04f9b0b344b2228513960a79f, type: 3}
+--- !u!4 &4204354537976728918 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2273918866382750579, guid: b11409e04f9b0b344b2228513960a79f, type: 3}
+  m_PrefabInstance: {fileID: 2726449107104828965}
+  m_PrefabAsset: {fileID: 0}

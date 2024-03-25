@@ -7,9 +7,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2808219637517336387, guid: 3d6b8bd524d0d9c4e94917428c9ab0f9, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7772642958128240321, guid: 3d6b8bd524d0d9c4e94917428c9ab0f9, type: 3}
       propertyPath: m_Name
-      value: Fire Spirit
+      value: Fire Spirit Variant
       objectReference: {fileID: 0}
     - target: {fileID: 7772642958128240321, guid: 3d6b8bd524d0d9c4e94917428c9ab0f9, type: 3}
       propertyPath: m_Layer
@@ -78,6 +82,10 @@ PrefabInstance:
     - target: {fileID: 7772642958128240329, guid: 3d6b8bd524d0d9c4e94917428c9ab0f9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7772642958128240330, guid: 3d6b8bd524d0d9c4e94917428c9ab0f9, type: 3}
+      propertyPath: m_Material
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d6b8bd524d0d9c4e94917428c9ab0f9, type: 3}
