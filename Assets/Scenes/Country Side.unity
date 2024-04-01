@@ -4113,7 +4113,29 @@ MonoBehaviour:
   spawnPoints:
   - {fileID: 1888142615}
   - {fileID: 1078430198}
-  waves: []
+  waves:
+  - enemies:
+    - {fileID: 3665073469593367125, guid: cab5a61cf9e0b5c4aa896a1bfbec7a2d, type: 3}
+    - {fileID: 1660261599294916425, guid: 24321d8bbfb9cd24484a529256a81fcd, type: 3}
+    - {fileID: 3665073469593367125, guid: cab5a61cf9e0b5c4aa896a1bfbec7a2d, type: 3}
+    - {fileID: 1660261599294916425, guid: 24321d8bbfb9cd24484a529256a81fcd, type: 3}
+    timeToNextEnemy: 4
+    timeToNextWave: 1
+    enemiesLeft: 0
+  - enemies:
+    - {fileID: 3665073469593367125, guid: cab5a61cf9e0b5c4aa896a1bfbec7a2d, type: 3}
+    - {fileID: 1660261599294916425, guid: 24321d8bbfb9cd24484a529256a81fcd, type: 3}
+    - {fileID: 3665073469593367125, guid: cab5a61cf9e0b5c4aa896a1bfbec7a2d, type: 3}
+    - {fileID: 1660261599294916425, guid: 24321d8bbfb9cd24484a529256a81fcd, type: 3}
+    - {fileID: 3665073469593367125, guid: cab5a61cf9e0b5c4aa896a1bfbec7a2d, type: 3}
+    - {fileID: 1660261599294916425, guid: 24321d8bbfb9cd24484a529256a81fcd, type: 3}
+    timeToNextEnemy: 6
+    timeToNextWave: 1
+    enemiesLeft: 0
+  - enemies: []
+    timeToNextEnemy: 0
+    timeToNextWave: 0
+    enemiesLeft: 0
   currentWaveIndex: 0
 --- !u!4 &1148197916
 Transform:

@@ -156,7 +156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3b9d7f949ef08e45b887e58a26cac71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackSoundClip: {fileID: 8300000, guid: ea981ba09b4b96240b281dab06588052, type: 3}
+  attackSoundClip: {fileID: 8300000, guid: 436cca22afe66c745aca474240621903, type: 3}
   attackVolume: 1
   bulletPos: {fileID: 3665073468710272238}
   bullet: {fileID: 6185671829306727607, guid: 1604c7e0b1d3c024a881bc0176475ac0, type: 3}
@@ -220,7 +220,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3665073469593367113}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0

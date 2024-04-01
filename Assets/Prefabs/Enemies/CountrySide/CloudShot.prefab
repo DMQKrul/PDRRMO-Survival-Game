@@ -155,7 +155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3b9d7f949ef08e45b887e58a26cac71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackSoundClip: {fileID: 8300000, guid: fe7612dfa3b88164d880dc15a9cccbea, type: 3}
+  attackSoundClip: {fileID: 8300000, guid: d2269430c50a6114fb407e3ac72f8302, type: 3}
   attackVolume: 1
   bulletPos: {fileID: 1660261598874500812}
   bullet: {fileID: 7487122442003403703, guid: 18218c201589212488ffba4144fcd2f1, type: 3}
