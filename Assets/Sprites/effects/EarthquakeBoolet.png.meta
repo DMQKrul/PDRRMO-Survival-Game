@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 07d4fb294cb8a94418617857b44422a4
+guid: 1179610f609e5314eb460fed9dff1c98
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 144
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -117,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Death_0
+      name: EarthquakeBoolet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 144
-        height: 144
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee24638dcea241249973288bbe7447bf
-      internalID: -1266214332
+      spriteID: bf52f2b5b68aaad4587a2b7ec4428996
+      internalID: 960551425
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Death_1
+      name: EarthquakeBoolet_1
       rect:
         serializedVersion: 2
-        x: 144
+        x: 32
         y: 0
-        width: 144
-        height: 144
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c09d2c0a3524f3b499fad57f407ecf0e
-      internalID: -1181720362
+      spriteID: aed683bb9c5295e4c96f2b3d7336fcc9
+      internalID: -1595093472
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Death_2
+      name: EarthquakeBoolet_2
       rect:
         serializedVersion: 2
-        x: 288
+        x: 64
         y: 0
-        width: 144
-        height: 144
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,113 +173,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fea2f29f05ba60b45bc5e415f4319d70
-      internalID: 2006200757
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Death_3
-      rect:
-        serializedVersion: 2
-        x: 432
-        y: 0
-        width: 144
-        height: 144
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 44d454bc4707ca04aa8c7ccece4fad1b
-      internalID: 1464509774
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Death_4
-      rect:
-        serializedVersion: 2
-        x: 576
-        y: 0
-        width: 144
-        height: 144
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ee4edd1b8feb53c418edf44c467556b5
-      internalID: 377263951
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Death_5
-      rect:
-        serializedVersion: 2
-        x: 720
-        y: 0
-        width: 144
-        height: 144
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6262d1afacd288e4dba280cdd91b90e8
-      internalID: -1817379512
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Death_6
-      rect:
-        serializedVersion: 2
-        x: 864
-        y: 0
-        width: 144
-        height: 144
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d3482243eb39b4141bbbe60478bfb725
-      internalID: 2000779461
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Death_7
-      rect:
-        serializedVersion: 2
-        x: 1008
-        y: 0
-        width: 144
-        height: 144
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a3578172c697b70439abd44cacb24bb7
-      internalID: 1355648731
+      spriteID: c14fdaafdf23c37419ad9cc1d59757a1
+      internalID: 1336329601
       vertices: []
       indices: 
       edges: []
@@ -295,14 +190,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Death_0: -1266214332
-      Death_1: -1181720362
-      Death_2: 2006200757
-      Death_3: 1464509774
-      Death_4: 377263951
-      Death_5: -1817379512
-      Death_6: 2000779461
-      Death_7: 1355648731
+      EarthquakeBoolet_0: 960551425
+      EarthquakeBoolet_1: -1595093472
+      EarthquakeBoolet_2: 1336329601
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
