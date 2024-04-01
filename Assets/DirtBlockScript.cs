@@ -13,6 +13,8 @@ public class DirtBlockScript : MonoBehaviour
     public GameObject spike1;
     public GameObject spike2;
     public GameObject spike3;
+    public GameObject earthQuake;
+    public Transform earthQuakePos;
     public Transform spike1Pos;
     public Transform spike2Pos;
     public Transform spike3Pos;
@@ -30,6 +32,13 @@ public class DirtBlockScript : MonoBehaviour
     public void Exhausted()
     {
         anim.SetTrigger("Exhausted");
+    }
+
+    public void quakeE()
+    {
+        shake.CamShaking();
+        SoundFXManager.instance.PlaySoundFXClip(atkSoundClip, transform, atkVolume);
+        Instantiate(earthQuake, earthQuakePos.position, Quaternion.identity);
     }
 
     public void spikeSpawn1()
