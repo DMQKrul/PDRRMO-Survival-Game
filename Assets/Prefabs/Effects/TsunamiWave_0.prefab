@@ -168,5 +168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fb73498d0ff4d14bbf3cd01bf14287e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  atkSoundClip2: {fileID: 8300000, guid: 2b2d3417b647b8c47af9adebc13a7512, type: 3}
+  atkVolume2: 0.5
   force: 5
   damage: 5

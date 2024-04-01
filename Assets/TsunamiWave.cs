@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class TsunamiWave : MonoBehaviour
 {
+    [SerializeField] private AudioClip atkSoundClip2;
+    public float atkVolume2 = 1f;
+
     private GameObject player;
     private Rigidbody2D rb;
     public float force;
@@ -16,6 +19,7 @@ public class TsunamiWave : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         player = GameObject.FindGameObjectWithTag("Player");
         shake = GameObject.FindGameObjectWithTag("ScreenShake").GetComponent<CamShake>();
+        SoundFXManager.instance.PlaySoundFXClip(atkSoundClip2, transform, atkVolume2);
 
         if (rb != null)
         {
