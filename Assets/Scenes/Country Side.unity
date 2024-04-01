@@ -3626,7 +3626,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1078430198}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.42, y: -6.52, z: 0}
+  m_LocalPosition: {x: 5.47, y: -3.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4119,7 +4119,7 @@ MonoBehaviour:
     - {fileID: 1660261599294916425, guid: 24321d8bbfb9cd24484a529256a81fcd, type: 3}
     - {fileID: 3665073469593367125, guid: cab5a61cf9e0b5c4aa896a1bfbec7a2d, type: 3}
     - {fileID: 1660261599294916425, guid: 24321d8bbfb9cd24484a529256a81fcd, type: 3}
-    timeToNextEnemy: 4
+    timeToNextEnemy: 8
     timeToNextWave: 1
     enemiesLeft: 0
   - enemies:
@@ -4129,12 +4129,13 @@ MonoBehaviour:
     - {fileID: 1660261599294916425, guid: 24321d8bbfb9cd24484a529256a81fcd, type: 3}
     - {fileID: 3665073469593367125, guid: cab5a61cf9e0b5c4aa896a1bfbec7a2d, type: 3}
     - {fileID: 1660261599294916425, guid: 24321d8bbfb9cd24484a529256a81fcd, type: 3}
-    timeToNextEnemy: 6
+    timeToNextEnemy: 8
     timeToNextWave: 1
     enemiesLeft: 0
-  - enemies: []
-    timeToNextEnemy: 0
-    timeToNextWave: 0
+  - enemies:
+    - {fileID: 7817792990348156594, guid: caeff4a7aa63b0b48aa807e4feb37c59, type: 3}
+    timeToNextEnemy: 2
+    timeToNextWave: 1
     enemiesLeft: 0
   currentWaveIndex: 0
 --- !u!4 &1148197916
