@@ -159,7 +159,7 @@ MonoBehaviour:
   attackSoundClip: {fileID: 8300000, guid: 436cca22afe66c745aca474240621903, type: 3}
   attackVolume: 1
   bulletPos: {fileID: 3665073468710272238}
-  bullet: {fileID: 6185671829306727607, guid: 1604c7e0b1d3c024a881bc0176475ac0, type: 3}
+  bullet: {fileID: 8091651515734144664, guid: 055bae38dfabd0c479cb6e43cd836291, type: 3}
   attackOffset: {x: 0, y: 0, z: 0}
   attackRange: 5
   attackMask:
