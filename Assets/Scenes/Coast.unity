@@ -4160,9 +4160,9 @@ MonoBehaviour:
     enemiesLeft: 0
   - enemies:
     - {fileID: 3355315012909050354, guid: 7caca088f30c7694896067103a9b7023, type: 3}
-    - {fileID: 7356262764113257054, guid: 3964a95fd2c651146ac021ed228067ec, type: 3}
-    - {fileID: 7356262764113257054, guid: 3964a95fd2c651146ac021ed228067ec, type: 3}
     - {fileID: 3355315012909050354, guid: 7caca088f30c7694896067103a9b7023, type: 3}
+    - {fileID: 7356262764113257054, guid: 3964a95fd2c651146ac021ed228067ec, type: 3}
+    - {fileID: 7356262764113257054, guid: 3964a95fd2c651146ac021ed228067ec, type: 3}
     - {fileID: 7356262764113257054, guid: 3964a95fd2c651146ac021ed228067ec, type: 3}
     - {fileID: 7356262764113257054, guid: 3964a95fd2c651146ac021ed228067ec, type: 3}
     timeToNextEnemy: 4
