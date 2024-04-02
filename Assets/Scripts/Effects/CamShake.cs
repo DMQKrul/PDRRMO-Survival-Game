@@ -10,4 +10,9 @@ public class CamShake : MonoBehaviour
     {
         camAnim.SetTrigger("shake");
     }
+
+    public void EarthQuakeCamShaking()
+    {
+        camAnim.SetTrigger("earthQuake");
+    }
 }

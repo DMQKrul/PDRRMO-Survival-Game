@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Quake : MonoBehaviour
+public class Spike : MonoBehaviour
 {
     private GameObject player;
     private Rigidbody2D rb;
@@ -28,7 +28,7 @@ public class Quake : MonoBehaviour
     {
         timer += Time.deltaTime;
 
-        if(timer > 1)
+        if(timer > 1.5)
         {
             Destroy(gameObject);
         }
