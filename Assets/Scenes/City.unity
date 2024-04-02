@@ -2698,7 +2698,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Do you want to go back to quit the game?
+  m_Text: Do you want to quit the game?
 --- !u!222 &310753527
 CanvasRenderer:
   m_ObjectHideFlags: 0

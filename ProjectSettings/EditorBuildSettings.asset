@@ -14,4 +14,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Firelands.unity
     guid: 11bd6ab86e138164484faa93ce31cda5
+  - enabled: 1
+    path: Assets/Scenes/City.unity
+    guid: 86ed90e1e47ed974ba4ddc9dd0d34e1b
+  - enabled: 1
+    path: Assets/Scenes/Coast.unity
+    guid: 624da6c6674aea249a74aad34f5b4b0c
+  - enabled: 1
+    path: Assets/Scenes/Country Side.unity
+    guid: 7e38df6f8ce61a44d9bdce2978593d2c
   m_configObjects: {}
