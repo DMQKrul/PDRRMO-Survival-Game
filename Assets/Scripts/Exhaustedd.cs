@@ -6,14 +6,14 @@ public class Exhaustedd : StateMachineBehaviour
 {
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        if(animator.GetCurrentAnimatorStateInfo(0).normalizedTime <= 1)
-        {
-            animator.SetTrigger("Attack1");
-        }
     }
 
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
+        if(animator.GetCurrentAnimatorStateInfo(0).normalizedTime <= 1)
+        {
+            animator.SetTrigger("Attack1");
+        }
     }
 
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
