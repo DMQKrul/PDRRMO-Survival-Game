@@ -4309,7 +4309,7 @@ MonoBehaviour:
     enemiesLeft: 0
   - enemies:
     - {fileID: 5428198415705824557, guid: 84706052dff363d488ce5ffbca05da1d, type: 3}
-    - {fileID: 5428198415705824557, guid: 84706052dff363d488ce5ffbca05da1d, type: 3}
+    - {fileID: 213168278370178734, guid: 3527e6750179483489d35a5f8f630e16, type: 3}
     - {fileID: 213168278370178734, guid: 3527e6750179483489d35a5f8f630e16, type: 3}
     - {fileID: 213168278370178734, guid: 3527e6750179483489d35a5f8f630e16, type: 3}
     - {fileID: 213168278370178734, guid: 3527e6750179483489d35a5f8f630e16, type: 3}
@@ -4323,6 +4323,12 @@ MonoBehaviour:
     timeToNextWave: 1
     enemiesLeft: 0
   currentWaveIndex: 0
+  StageCompletePanel: {fileID: 296706499}
+  healthBar: {fileID: 1632941827}
+  pauseBtn: {fileID: 1310704547}
+  controls: {fileID: 1996560487}
+  blurBg: {fileID: 2120757608}
+  BgMusic: {fileID: 466864619}
 --- !u!4 &1148197916
 Transform:
   m_ObjectHideFlags: 0

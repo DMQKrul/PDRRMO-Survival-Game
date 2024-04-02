@@ -7,9 +7,19 @@ public class WaveSpawner : MonoBehaviour
     [SerializeField] private float countdown;
     [SerializeField] private GameObject[] spawnPoints;
 
+    // [SerializeField] private AudioClip Win;
+    // public float WinVolume = 1f;
+
     public Wave[] waves;
     public int currentWaveIndex = 0;
     private bool readyToCountdown;
+
+    public GameObject StageCompletePanel;
+    public GameObject healthBar;
+    public GameObject pauseBtn;
+    public GameObject controls;
+    public GameObject blurBg;
+    public GameObject BgMusic;
 
     private void Start()
     {
@@ -24,8 +34,12 @@ public class WaveSpawner : MonoBehaviour
     {
         if (currentWaveIndex >= waves.Length)
         {
-            Debug.Log("You survived every wave");
-            return;
+            // SoundFXManager.instance.PlaySoundFXClip(Win, transform, WinVolume);
+            StageCompletePanel.SetActive(true);
+            healthBar.SetActive(false);
+            pauseBtn.SetActive(false);
+            controls.SetActive(false);
+            BgMusic.SetActive(false);
         }
         if (readyToCountdown == true)
         {
