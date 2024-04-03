@@ -20,6 +20,7 @@ public class WaveSpawner : MonoBehaviour
     public GameObject controls;
     public GameObject blurBg;
     public GameObject BgMusic;
+    public GameObject bossBar;
 
     private void Start()
     {
@@ -36,10 +37,13 @@ public class WaveSpawner : MonoBehaviour
         {
             // SoundFXManager.instance.PlaySoundFXClip(Win, transform, WinVolume);
             StageCompletePanel.SetActive(true);
+            blurBg.SetActive(true);
             healthBar.SetActive(false);
             pauseBtn.SetActive(false);
             controls.SetActive(false);
             BgMusic.SetActive(false);
+            bossBar.SetActive(false);
+            Time.timeScale = 0f;
         }
         if (readyToCountdown == true)
         {
@@ -74,6 +78,7 @@ public class WaveSpawner : MonoBehaviour
                 {
                     // Use a fixed spawn point for the last wave
                     spawnPoint = spawnPoints[1]; // Change this index to the desired fixed spawn point
+                    bossBar.SetActive(true);
                 }
                 else
                 {

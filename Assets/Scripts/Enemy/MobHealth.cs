@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MobHealth : MonoBehaviour
 {
-
+    public float healthMax;
     public float health = 1;
     private Animator animator;
     private WaveSpawner waveSpawner;
@@ -18,6 +18,7 @@ public class MobHealth : MonoBehaviour
         // Find a component of type T in the scene
         // waveSpawner= FindObjectOfType<WaveSpawner>();
         waveSpawner = GetComponentInParent<WaveSpawner>();
+        healthMax = health;
     }
     public void TakeDamage(float damage)
     {

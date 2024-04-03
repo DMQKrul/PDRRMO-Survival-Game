@@ -26,6 +26,30 @@ public class MainMenu : MonoBehaviour
         MenuBtn.SetActive(false);
     }
 
+    public void LoadVolcano()
+    {
+        SceneManager.LoadScene("Firelands");
+        Time.timeScale = 1f;
+    }
+
+    public void LoadTsunami()
+    {
+        SceneManager.LoadScene("Coast");
+        Time.timeScale = 1f;
+    }
+    
+    public void LoadEarthquake()
+    {
+        SceneManager.LoadScene("City");
+        Time.timeScale = 1f;
+    }
+    
+    public void LoadTyphoon()
+    {
+        SceneManager.LoadScene("Country Side");
+        Time.timeScale = 1f;
+    }
+
     public void Back()
     {
         SoundFXManager.instance.PlaySoundFXClip(btnPress, transform, btnVolume);
