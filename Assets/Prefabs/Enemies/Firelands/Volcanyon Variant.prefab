@@ -104,6 +104,10 @@ PrefabInstance:
       propertyPath: health
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 2273918866382750577, guid: b11409e04f9b0b344b2228513960a79f, type: 3}
+      propertyPath: healthMax
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 2273918866382750578, guid: b11409e04f9b0b344b2228513960a79f, type: 3}
       propertyPath: atkSoundClip
       value: 

@@ -12,6 +12,16 @@ public class BossHealthBar : MonoBehaviour
     void Start()
     {
         slider = GetComponent<Slider>();
+        GameObject[] bosses = GameObject.FindGameObjectsWithTag("Enemy");
+        // Assuming you want the first boss found
+        if (bosses.Length > 0)
+        {
+            bossHealth = bosses[0].GetComponent<MobHealth>();
+        }
+        else
+        {
+            Debug.LogError("No boss GameObject found with the 'Boss' tag.");
+        }
     }
 
     // Update is called once per frame

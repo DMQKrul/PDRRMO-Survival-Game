@@ -32,7 +32,7 @@ public class TsunamiWave : MonoBehaviour
     {
         timer += Time.deltaTime;
 
-        if(timer > 3)
+        if(timer > 5)
         {
             Destroy(gameObject);
         }

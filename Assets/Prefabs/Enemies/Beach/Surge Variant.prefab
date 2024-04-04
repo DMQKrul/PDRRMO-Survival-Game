@@ -11,9 +11,13 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.205
       objectReference: {fileID: 0}
+    - target: {fileID: 4133707386492016568, guid: 8d790bf336a5e2547b41960098292a06, type: 3}
+      propertyPath: healthMax
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 4133707386492016572, guid: 8d790bf336a5e2547b41960098292a06, type: 3}
       propertyPath: m_Name
-      value: Surge
+      value: Surge Variant
       objectReference: {fileID: 0}
     - target: {fileID: 4133707386492016574, guid: 8d790bf336a5e2547b41960098292a06, type: 3}
       propertyPath: m_RootOrder

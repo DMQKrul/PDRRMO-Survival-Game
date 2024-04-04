@@ -5,7 +5,7 @@ using UnityEngine;
 public class MobHealth : MonoBehaviour
 {
     public float healthMax;
-    public float health = 1;
+    public float health = 50;
     private Animator animator;
     private WaveSpawner waveSpawner;
     public bool isInvulnerable = false;
@@ -25,10 +25,10 @@ public class MobHealth : MonoBehaviour
         if (isInvulnerable)
             return;
 
-        health -= damage;
+        healthMax -= damage;
         Debug.Log("ouch");
 
-        if (health <= 0)
+        if (healthMax <= 0)
         {
             Die();
         }

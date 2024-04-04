@@ -143,7 +143,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.15335417, y: -0.032285094}
+  m_Offset: {x: 0.039721087, y: -0.13612238}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -154,7 +154,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.215246, y: 0.7360839}
+  m_Size: {x: 0.6823455, y: 0.63028747}
   m_EdgeRadius: 0
 --- !u!114 &4710774679983722876
 MonoBehaviour:
@@ -170,5 +170,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   atkSoundClip2: {fileID: 8300000, guid: 2b2d3417b647b8c47af9adebc13a7512, type: 3}
   atkVolume2: 1
-  force: 8
-  damage: 5
+  force: 4
+  damage: 3
