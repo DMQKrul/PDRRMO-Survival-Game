@@ -44,8 +44,12 @@ PrefabInstance:
       objectReference: {fileID: 1539905796}
     - target: {fileID: 6044845814478743682, guid: 4deb34eb1769be940ae579dace27210a, type: 3}
       propertyPath: m_Name
-      value: DirtBlock
+      value: DirtBlock Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 6044845814478743685, guid: 4deb34eb1769be940ae579dace27210a, type: 3}
+      propertyPath: heal
+      value: 
+      objectReference: {fileID: 8300000, guid: d957644b51a4cb44da436ef1efcff3c7, type: 3}
     - target: {fileID: 6044845814478743686, guid: 4deb34eb1769be940ae579dace27210a, type: 3}
       propertyPath: m_RootOrder
       value: 0

@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class MobHealth : MonoBehaviour
 {
+    [SerializeField] private AudioClip heal;
+    public float healVolume = 1f;
+
     public float healthMax;
     public float health = 50;
     private Animator animator;
     private WaveSpawner waveSpawner;
     public bool isInvulnerable = false;
-
-    
 
     public int healAmount = 5;
     public float healChance = 0.2f;
@@ -43,6 +44,7 @@ public class MobHealth : MonoBehaviour
 
          if (Random.value <= healChance && Character.instance != null)
         {
+            SoundFXManager.instance.PlaySoundFXClip(heal, transform, healVolume);
             Character.instance.HealPlayer(healAmount);
         }
     }

@@ -180,9 +180,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a460291d99d9cff4b9d632c0f521220d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  heal: {fileID: 8300000, guid: d957644b51a4cb44da436ef1efcff3c7, type: 3}
+  healVolume: 1
   healthMax: 50
   health: 50
   isInvulnerable: 0
+  healAmount: 5
+  healChance: 0.2
 --- !u!114 &7817792990348156605
 MonoBehaviour:
   m_ObjectHideFlags: 0

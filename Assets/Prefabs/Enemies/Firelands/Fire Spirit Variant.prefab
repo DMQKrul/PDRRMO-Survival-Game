@@ -27,6 +27,10 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7772642958128240326, guid: 3d6b8bd524d0d9c4e94917428c9ab0f9, type: 3}
+      propertyPath: heal
+      value: 
+      objectReference: {fileID: 8300000, guid: d957644b51a4cb44da436ef1efcff3c7, type: 3}
     - target: {fileID: 7772642958128240327, guid: 3d6b8bd524d0d9c4e94917428c9ab0f9, type: 3}
       propertyPath: attackOffset.y
       value: -0.1

@@ -3268,7 +3268,6 @@ GameObject:
   - component: {fileID: 1348845718}
   - component: {fileID: 1348845722}
   - component: {fileID: 1348845723}
-  - component: {fileID: 1348845724}
   - component: {fileID: 1348845725}
   m_Layer: 9
   m_Name: Player
@@ -3476,20 +3475,6 @@ MonoBehaviour:
   attackRange: 1
   damage: 1
   attackButton: {fileID: 2045585440}
---- !u!114 &1348845724
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1348845713}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 203dbc64526869848b2735e05ad3942d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentHealth: 0
-  maxHealth: 10
 --- !u!114 &1348845725
 MonoBehaviour:
   m_ObjectHideFlags: 0
