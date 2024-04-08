@@ -2996,7 +2996,7 @@ MonoBehaviour:
     timeToNextWave: 0.5
     enemiesLeft: 0
   - enemies:
-    - {fileID: 6044845814478743685, guid: 4deb34eb1769be940ae579dace27210a, type: 3}
+    - {fileID: 8400960395678035920, guid: c1c9da37f46ff774f94d0c94295dba27, type: 3}
     timeToNextEnemy: 0.5
     timeToNextWave: 1
     enemiesLeft: 0
@@ -3023,7 +3023,7 @@ Transform:
   - {fileID: 1888142616}
   - {fileID: 1078430199}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1290228029
 GameObject:
@@ -4118,7 +4118,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2879766515307727939, guid: b766e2432a770094d9c1cb8d7fbc1f80, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2879766515307727939, guid: b766e2432a770094d9c1cb8d7fbc1f80, type: 3}
       propertyPath: m_AnchorMax.x

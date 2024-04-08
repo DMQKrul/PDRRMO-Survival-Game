@@ -50,6 +50,13 @@ public class DirtBlockScript : MonoBehaviour
         Instantiate(earthQuake, earthQuakePos2.position, Quaternion.identity);
     }
 
+    public void quake3()
+    {
+        shake.CamShaking();
+        SoundFXManager.instance.PlaySoundFXClip(atkSoundClip, transform, atkVolume);
+        Instantiate(earthQuake, earthQuakePos3.position, Quaternion.identity);
+    }
+
     public void spikeSpawn1()
     {
         shake.CamShaking();

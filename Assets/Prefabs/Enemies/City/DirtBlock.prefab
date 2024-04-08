@@ -260,6 +260,7 @@ MonoBehaviour:
   earthQuake: {fileID: 4889525376333732813, guid: 924860f9a6855134597c27d0f04b7f9e, type: 3}
   earthQuakePos: {fileID: 6044845815359368779}
   earthQuakePos2: {fileID: 6044845813330614776}
+  earthQuakePos3: {fileID: 0}
   spike1Pos: {fileID: 6044845814157333216}
   spike2Pos: {fileID: 6044845814135514692}
   spike3Pos: {fileID: 6044845814041217742}
