@@ -16,6 +16,7 @@ public class DirtBlockScript : MonoBehaviour
     public GameObject earthQuake;
     public Transform earthQuakePos;
     public Transform earthQuakePos2;
+    public Transform earthQuakePos3;
     public Transform spike1Pos;
     public Transform spike2Pos;
     public Transform spike3Pos;
@@ -37,14 +38,14 @@ public class DirtBlockScript : MonoBehaviour
 
     public void quakeE()
     {
-        shake.EarthQuakeCamShaking();
+        shake.CamShaking();
         SoundFXManager.instance.PlaySoundFXClip(atkSoundClip, transform, atkVolume);
         Instantiate(earthQuake, earthQuakePos.position, Quaternion.identity);
     }
 
     public void quake2()
     {
-        shake.EarthQuakeCamShaking();
+        shake.CamShaking();
         SoundFXManager.instance.PlaySoundFXClip(atkSoundClip, transform, atkVolume);
         Instantiate(earthQuake, earthQuakePos2.position, Quaternion.identity);
     }
