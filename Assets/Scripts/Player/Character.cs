@@ -13,6 +13,8 @@ public class Character : MonoBehaviour
     [SerializeField] private AudioClip dmgTaken;
     public float dmgTakenVolume = 1f;
 
+    [SerializeField] private SimpleFlash flashEffect;
+
     [SerializeField] private AudioClip gameOvr;
     public float gameOvrVolume = 1f;
 
@@ -104,6 +106,7 @@ public class Character : MonoBehaviour
         // dazedTime = startDazedTime;
         // Instantiate(damageEffect, transform.position, Quaternion.identity)
         SoundFXManager.instance.PlaySoundFXClip(dmgTaken, transform, dmgTakenVolume);
+        flashEffect.Flash();
         currentHealth -= damage;
         Debug.Log("Damage Taken !");
     }

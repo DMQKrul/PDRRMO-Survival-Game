@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: -6233420107745910493}
   - component: {fileID: -3594138189340516602}
   - component: {fileID: 6020741725009387875}
+  - component: {fileID: -5765716515992486646}
   m_Layer: 0
   m_Name: CannonBullet
   m_TagString: Untagged
@@ -205,3 +206,18 @@ CircleCollider2D:
   m_Offset: {x: 0.016901653, y: -0.10140984}
   serializedVersion: 2
   m_Radius: 0.34788385
+--- !u!114 &-5765716515992486646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7487122442003403703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a460291d99d9cff4b9d632c0f521220d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthMax: 1
+  health: 50
+  isInvulnerable: 0

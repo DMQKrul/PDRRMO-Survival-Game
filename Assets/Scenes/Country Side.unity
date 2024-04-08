@@ -3248,6 +3248,7 @@ GameObject:
   - component: {fileID: 1348845722}
   - component: {fileID: 1348845723}
   - component: {fileID: 1348845724}
+  - component: {fileID: 1348845725}
   m_Layer: 9
   m_Name: Player
   m_TagString: Player
@@ -3423,6 +3424,7 @@ MonoBehaviour:
   walkSoundClip: {fileID: 8300000, guid: 34443bc7fec7e5647be0b8dc0724c851, type: 3}
   dmgTaken: {fileID: 8300000, guid: b402c9337e4aa7449bc6ce264e40de1f, type: 3}
   dmgTakenVolume: 1
+  flashEffect: {fileID: 1348845725}
   gameOvr: {fileID: 8300000, guid: bbc94e2a3c660c54a8311d9410a2ea19, type: 3}
   gameOvrVolume: 1
   currentHealth: 50
@@ -3467,6 +3469,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHealth: 0
   maxHealth: 10
+--- !u!114 &1348845725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348845713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da13fd1a327ec40867245a4c96f6cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashMaterial: {fileID: 2100000, guid: e9db37e32d7ecec4dbad2bf86c6e25ab, type: 2}
+  duration: 0.25
 --- !u!1 &1460826449
 GameObject:
   m_ObjectHideFlags: 0
