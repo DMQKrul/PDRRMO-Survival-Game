@@ -14,10 +14,9 @@ GameObject:
   - component: {fileID: 4940064408139316566}
   - component: {fileID: 6692259429249819476}
   - component: {fileID: 6385446278387332295}
-  - component: {fileID: -6798922861096695433}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: ElectroBall_0
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -161,18 +160,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 5
   damage: 0.5
---- !u!114 &-6798922861096695433
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8091651515734144664}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a460291d99d9cff4b9d632c0f521220d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthMax: 1
-  health: 50
-  isInvulnerable: 0
