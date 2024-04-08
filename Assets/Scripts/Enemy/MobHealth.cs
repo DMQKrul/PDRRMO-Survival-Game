@@ -12,6 +12,9 @@ public class MobHealth : MonoBehaviour
 
     
 
+    public int healAmount = 5;
+    public float healChance = 0.2f;
+
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -37,6 +40,11 @@ public class MobHealth : MonoBehaviour
     void Die()
     {
         animator.SetTrigger("Die");
+
+         if (Random.value <= healChance && Character.instance != null)
+        {
+            Character.instance.HealPlayer(healAmount);
+        }
     }
 
 

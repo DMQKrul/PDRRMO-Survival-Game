@@ -27,6 +27,8 @@ public class Character : MonoBehaviour
     private bool facingRight = true;
     private Vector3 localScale;
 
+    public static Character instance;
+
     public GameObject GameOverPanel;
     public GameObject healthBar;
     public GameObject pauseBtn;
@@ -90,6 +92,11 @@ public class Character : MonoBehaviour
         }
     }
 
+    private void Awake()
+    {
+        instance = this;
+    }
+
     void Died()
     {
         SoundFXManager.instance.PlaySoundFXClip(gameOvr, transform, gameOvrVolume);
@@ -127,6 +134,13 @@ public class Character : MonoBehaviour
             localScale.x *= -1;
 
         transform.localScale = localScale;
+    }
+
+    public void HealPlayer(int amount)
+    {
+        currentHealth += amount;
+
+        currentHealth = Mathf.Min(currentHealth, maxHealth);
     }
 
     public void GameOverTrue()
