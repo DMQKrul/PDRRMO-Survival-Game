@@ -6,6 +6,7 @@ public class WaveSpawner : MonoBehaviour
 {
     [SerializeField] private float countdown;
     [SerializeField] private GameObject[] spawnPoints;
+    [SerializeField] private float introDuration = 3.0f;
 
     // [SerializeField] private AudioClip Win;
     // public float WinVolume = 1f;
@@ -21,6 +22,7 @@ public class WaveSpawner : MonoBehaviour
     public GameObject blurBg;
     public GameObject BgMusic;
     public GameObject bossBar;
+    public GameObject introObject;
 
     private void Start()
     {
@@ -78,6 +80,20 @@ public class WaveSpawner : MonoBehaviour
                 {
                     // Use a fixed spawn point for the last wave
                     spawnPoint = spawnPoints[1]; // Change this index to the desired fixed spawn point
+                    
+                    if (i == 0) // Only play intro once before spawning boss
+                {
+                    // Activate intro game object
+                    introObject.SetActive(true);
+                    controls.SetActive(false);
+                    pauseBtn.SetActive(false);
+                    yield return new WaitForSeconds(introDuration); // Wait for intro duration
+                    // Deactivate intro game object
+                    introObject.SetActive(false);
+                    controls.SetActive(true);
+                    pauseBtn.SetActive(true);
+                }
+                 
                     bossBar.SetActive(true);
                 }
                 else
