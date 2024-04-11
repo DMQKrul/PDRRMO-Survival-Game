@@ -14,8 +14,8 @@ public class MainMenu : MonoBehaviour
     public GameObject MenuBtn;
     public GameObject title;
     public GameObject selectPanel;
-    
-    
+    public GameObject aboutPanel;
+    public GameObject blurBg2;
     
     public void PlayGame()
     {
@@ -26,29 +26,29 @@ public class MainMenu : MonoBehaviour
         MenuBtn.SetActive(false);
     }
 
-    public void LoadVolcano()
-    {
-        SceneManager.LoadScene("Firelands");
-        Time.timeScale = 1f;
-    }
+    // public void LoadVolcano()
+    // {
+    //     SceneManager.LoadScene("Firelands");
+    //     Time.timeScale = 1f;
+    // }
 
-    public void LoadTsunami()
-    {
-        SceneManager.LoadScene("Coast");
-        Time.timeScale = 1f;
-    }
+    // public void LoadTsunami()
+    // {
+    //     SceneManager.LoadScene("Coast");
+    //     Time.timeScale = 1f;
+    // }
     
-    public void LoadEarthquake()
-    {
-        SceneManager.LoadScene("City");
-        Time.timeScale = 1f;
-    }
+    // public void LoadEarthquake()
+    // {
+    //     SceneManager.LoadScene("City");
+    //     Time.timeScale = 1f;
+    // }
     
-    public void LoadTyphoon()
-    {
-        SceneManager.LoadScene("Country Side");
-        Time.timeScale = 1f;
-    }
+    // public void LoadTyphoon()
+    // {
+    //     SceneManager.LoadScene("Country Side");
+    //     Time.timeScale = 1f;
+    // }
 
     public void Back()
     {
@@ -57,6 +57,24 @@ public class MainMenu : MonoBehaviour
         blurBg.SetActive(false);
         title.SetActive(true);
         MenuBtn.SetActive(true);
+    }
+
+    public void About()
+    {
+        SoundFXManager.instance.PlaySoundFXClip(btnPress, transform, btnVolume);
+        blurBg2.SetActive(true);
+        aboutPanel.SetActive(true);
+        MenuBtn.SetActive(false);
+        title.SetActive(false);
+    }
+
+    public void backAbout()
+    {
+        SoundFXManager.instance.PlaySoundFXClip(btnPress, transform, btnVolume);
+        blurBg2.SetActive(false);
+        aboutPanel.SetActive(false);
+        MenuBtn.SetActive(true);
+        title.SetActive(true);
     }
 
     public void Exit()
