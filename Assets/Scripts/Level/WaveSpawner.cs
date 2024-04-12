@@ -48,6 +48,7 @@ public class WaveSpawner : MonoBehaviour
             controls.SetActive(false);
             BgMusic.SetActive(false);
             bossBar.SetActive(false);
+            waveCountText.gameObject.SetActive(false);
             Time.timeScale = 0f;
         }
         if (readyToCountdown == true)
