@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class WaveSpawner : MonoBehaviour
 {
     [SerializeField] private float countdown;
     [SerializeField] private GameObject[] spawnPoints;
+    [SerializeField] private GameObject newSpawnPoint;
     [SerializeField] private float introDuration = 3.0f;
+    [SerializeField] private Text waveCountText;
 
     // [SerializeField] private AudioClip Win;
     // public float WinVolume = 1f;
@@ -62,6 +65,7 @@ public class WaveSpawner : MonoBehaviour
         {
             readyToCountdown = true;
             currentWaveIndex++;
+            UpdateWaveCountText();
         }
     }
 
@@ -73,22 +77,18 @@ public class WaveSpawner : MonoBehaviour
 
             for (int i = 0; i < currentWave.enemies.Length; i++)
             {
-                // Select a spawn point based on the wave index
                 GameObject spawnPoint;
 
                 if (currentWaveIndex == waves.Length - 1)
                 {
-                    // Use a fixed spawn point for the last wave
-                    spawnPoint = spawnPoints[1]; // Change this index to the desired fixed spawn point
+                    spawnPoint = spawnPoints[1];
                     
-                    if (i == 0) // Only play intro once before spawning boss
+                    if (i == 0)
                 {
-                    // Activate intro game object
                     introObject.SetActive(true);
                     controls.SetActive(false);
                     pauseBtn.SetActive(false);
-                    yield return new WaitForSeconds(introDuration); // Wait for intro duration
-                    // Deactivate intro game object
+                    yield return new WaitForSeconds(introDuration);
                     introObject.SetActive(false);
                     controls.SetActive(true);
                     pauseBtn.SetActive(true);
@@ -96,13 +96,18 @@ public class WaveSpawner : MonoBehaviour
                  
                     bossBar.SetActive(true);
                 }
-                else
+                 else
+            {
+                if (i % 2 == 0)
                 {
-                    // Randomly select a spawn point for other waves
                     spawnPoint = spawnPoints[0];
                 }
+                else
+                {
+                    spawnPoint = newSpawnPoint;
+                }
+            }
 
-                // Instantiate enemy at the selected spawn point
                 MobHealth enemy = Instantiate(currentWave.enemies[i], spawnPoint.transform.position, Quaternion.identity);
                 enemy.transform.SetParent(spawnPoint.transform);
 
@@ -110,6 +115,11 @@ public class WaveSpawner : MonoBehaviour
             }
         }
     }
+
+    private void UpdateWaveCountText()
+        {
+            waveCountText.text = "Wave: " + (currentWaveIndex + 1) + "/" + waves.Length;
+        }
 }
 
 [System.Serializable]
