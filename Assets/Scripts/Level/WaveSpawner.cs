@@ -27,6 +27,10 @@ public class WaveSpawner : MonoBehaviour
     public GameObject bossBar;
     public GameObject introObject;
 
+    public InputField nameInputField;
+    public Text playerNameText;
+    public GameObject returnToMain;
+
     private void Start()
     {
         readyToCountdown = true;
@@ -42,6 +46,7 @@ public class WaveSpawner : MonoBehaviour
         {
             // SoundFXManager.instance.PlaySoundFXClip(Win, transform, WinVolume);
             StageCompletePanel.SetActive(true);
+            nameInputField.gameObject.SetActive(true);
             blurBg.SetActive(true);
             healthBar.SetActive(false);
             pauseBtn.SetActive(false);
@@ -49,7 +54,6 @@ public class WaveSpawner : MonoBehaviour
             BgMusic.SetActive(false);
             bossBar.SetActive(false);
             waveCountText.gameObject.SetActive(false);
-            Time.timeScale = 0f;
         }
         if (readyToCountdown == true)
         {
@@ -115,6 +119,22 @@ public class WaveSpawner : MonoBehaviour
                 yield return new WaitForSeconds(currentWave.timeToNextEnemy);
             }
         }
+    }
+
+    public void SaveAndShowName()
+    {
+        string playerName = nameInputField.text; // Get the player's name from the InputField
+        playerNameText.text = "You did a great job " + playerName; // Display the player's name on the screen
+        StartCoroutine(HideNameAfterDelay(3f)); // Call a coroutine to hide the player's name after 5 seconds
+    }
+
+    IEnumerator HideNameAfterDelay(float delay)
+    {
+        Debug.Log("Coroutine started");
+        yield return new WaitForSeconds(delay); // Wait for 5 seconds
+        Debug.Log("Coroutine finished waiting");
+        Destroy(nameInputField.gameObject);
+        returnToMain.SetActive(true);
     }
 
     private void UpdateWaveCountText()

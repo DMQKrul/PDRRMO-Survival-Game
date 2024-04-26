@@ -17,12 +17,14 @@ public class PauseMenu : MonoBehaviour
     public GameObject blurBg3;
     public GameObject menuConfirm;
     public GameObject quitConfirm;
+    public GameObject WaveText;
 
     public void Pause()
     {
         SoundFXManager.instance.PlaySoundFXClip(btnPress, transform, btnVolume);
         PausePanel.SetActive(true);
         blurBg.SetActive(true);
+        WaveText.SetActive(false);
         healthBar.SetActive(false);
         pauseBtn.SetActive(false);
         controls.SetActive(false);
@@ -34,6 +36,7 @@ public class PauseMenu : MonoBehaviour
         SoundFXManager.instance.PlaySoundFXClip(btnPress, transform, btnVolume);
         PausePanel.SetActive(false);
         blurBg.SetActive(false);
+        WaveText.SetActive(true);
         healthBar.SetActive(true);
         pauseBtn.SetActive(true);
         controls.SetActive(true);
